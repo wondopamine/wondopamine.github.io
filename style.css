@@ -1,0 +1,25 @@
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container{
+  padding-top: 100px;
+  font-size: 3.125vw;
+  font-weight: 500;
+  line-height: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container p{
+  width: 80%;
+  text-align: center;
+}
+
+.main-container p a{
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-aspect-ratio: 1 / 1) and (min-width: 1024px) and (max-width: 1920px)
