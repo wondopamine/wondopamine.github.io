@@ -3,9 +3,9 @@
 }
 
 .header-container {
-  font-size: 1vw;
   font-weight: 400;
   display: flex;
+  padding: 20px;
 }
 
 .nav {
@@ -20,22 +20,19 @@
 }
 
 .nav ul li {
-  padding: 1rem;
+  padding-left: 20px;
 }
 
 .main-container {
-  padding-top: 100px;
-  font-size: 3.125vw;
+  font-size: 50px;
   font-weight: 500;
-  line-height: 1.7em;
+  line-height: 150%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-wrapper {
-  width: 80%;
-  text-align: center;
+  width: 70%;
+  padding: 30px;
 }
 
 a {
@@ -43,4 +40,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-aspect-ratio: 1 / 1) and (min-width: 1024px) and (max-width: 1920px)
+@media (max-width: 800px) {
+  .main-wrapper {width: 100%;}
+}
