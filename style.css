@@ -1,4 +1,4 @@
-* {
+body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100, 300, 500, 700;
@@ -7,7 +7,7 @@
 .header-container {
   font-weight: 400;
   display: flex;
-  padding: 20px;
+  padding: 30px;
 }
 
 .header-container a {
@@ -31,7 +31,6 @@
 }
 
 .main-container {
-  margin-top: 5vw;
   padding: 30px;
 }
 
@@ -41,21 +40,40 @@
 }
 
 .main-wrapper {
-  width: 80%;
   margin-bottom: 15vh;
 }
 
 .introduction {
   margin-bottom: 20vh;
-  font-size: 35px;
-  font-weight: 300;
-  line-height: 130%;
+  font-size: 110px;
+  font-weight: 100;
+  line-height: 95%;
+}
+
+.introduction p {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.introduction u {
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
+  text-decoration-color: black;
+}
+
+.introduction font {
+  color: #7762FD;
+  text-decoration-color: black;
 }
 
 .information {
   font-size: 30px;
-  font-weight: 500;
-  line-height: 150%;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.information p {
+  margin: 0;
 }
 
 .img-wrapper {
@@ -105,12 +123,20 @@
 .top-button {
   display:scroll;
   position:fixed;
-  bottom:20px;
-  right:20px;
+  bottom:30px;
+  right:30px;
+  background-color: rgba(119, 98, 253, .7);
+  width:100px; height:100px;
+  border-radius:50px;
+  text-align:center;
+  margin:0 auto;
+  font-size:12px; color:#fff;
+  vertical-align:middle;
+  line-height:100px;
 }
 
 .top-button a {
-  color: gray;
+  color: white;
   text-decoration: none;
 }
 
