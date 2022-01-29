@@ -36,7 +36,6 @@ body {
 
 .main-container a {
   color: black;
-  text-decoration: none;
 }
 
 .main-wrapper {
@@ -44,7 +43,8 @@ body {
 }
 
 .introduction {
-  margin-bottom: 20vh;
+  width: 74%;
+  margin-bottom: 5vw;
   font-size: 110px;
   font-weight: 100;
   line-height: 95%;
@@ -52,7 +52,6 @@ body {
 
 .introduction p {
   margin: 0;
-  padding-bottom: 50px;
 }
 
 .introduction u {
@@ -69,11 +68,17 @@ body {
 .information {
   font-size: 30px;
   font-weight: 300;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .information p {
-  margin: 0;
+  margin-bottom: 3vh;
+}
+
+.closing {
+  margin-top: 10vh;
+  font-size: 30px;
+  text-align: center;
 }
 
 .img-wrapper {
@@ -144,9 +149,9 @@ body {
 
 @media (max-width: 800px) {
   .nav ul li {font-size: 3.8vw;}
-  .main-wrapper {width: 100%; margin-bottom: 10vh;}
-  .introduction {margin-bottom: 10vh; font-size: 6vw; line-height: 150%;}
-  .introduction h1 {line-height: 120%;}
+  .main-wrapper {margin-bottom: 10vh;}
+  .introduction {width: 100%; font-size: 12vw; font-weight: 300; line-height: 120%;}
   .information {font-size: 4vw; line-height: 140%;}
+  .closing {font-size: 4vw;}
   .img-wrapper {margin-bottom: 5vh;}
 }
