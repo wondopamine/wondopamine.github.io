@@ -14,27 +14,34 @@
     <script src="animsition/js/animsition.min.js"></script>
     <script src="scrollify_custom.js"></script>
     <script src="animsition_custom.js"></script>
-    <style media="screen">.animsition-overlay-slide {background-color: #E8EAEC;}</style>
+    <script src="colors.js"></script>
+    <style media="screen">.animsition-overlay-slide {background-color: #817f95;}</style>
   </head>
   <body class="page-blog">
     <header>
       <nav>
         <div class="animsition-overlay" data-animsition-overlay="true">
-          <a class="nav-logo animsition-link" href="index.html">
+          <a class="nav-logo animsition-link" href="index.html" id="color-home" onclick="colorHandler(this)">
             <img src="assets/images/logo.png" alt="logo" width="auto" height="35">
   				</a>
         </div>
         <div class="nav-container">
           <div class="animsition-overlay" data-animsition-overlay="true">
             <ul>
-              <li><a href="design.html" class="animsition-link">design</a></li>
-              <li><a href="about.html" class="animsition-link">about</a></li>
-              <li><a href="blog.html" class="animsition-link">blog</a></li>
-              <li><a href="sayhello.html" class="animsition-link">say hello</a></li>
+              <li><a href="design.html" class="animsition-link" id="color-design" onclick="colorHandler(this)">design</a></li>
+              <li><a href="about.html" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
+              <li><a href="blog.html" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+              <li><a href="sayhello.html" class="animsition-link" id="color-sayhello" onclick="colorHandler(this)">say hello</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <div class="main-container">
+      <div class="main-description">
+        <h1>Annyeonghaseyo.</h1>
+        <h2>I'm Wondo, and<br>Welcome to my portfolio.<br>Page: blog</h2>
+      </div>
+    </div>
   </body>
 </html>
