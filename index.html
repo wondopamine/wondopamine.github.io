@@ -15,6 +15,9 @@
     <script src="scrollify_custom.js"></script>
     <script src="animsition_custom.js"></script>
     <script src="colors.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <style media="screen">.animsition-overlay-slide {background-color: white;}</style>
   </head>
   <body class="page-home">
@@ -41,7 +44,7 @@
       <section class="panel-home" data-section-name="home">
         <div class="main-container">
           <div class="main-description">
-            <h1>Annyeonghaseyo.</h1>
+            <h1 data-splitting id="splitting">Annyeonghaseyo.</h1>
             <h2>I'm Wondo, and<br>Welcome to my portfolio.<br>⇩ (scroll)</h2>
           </div>
         </div>
@@ -55,5 +58,6 @@
       <section class="panel-contact" data-section-name="contact">
       </section>
     </div>
+    <script> Splitting(); </script>
   </body>
 </html>
