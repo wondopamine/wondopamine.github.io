@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="../css/animsition.min.css">
     <script src="../js/animsition.min.js"></script>
     <script src="../js/animsition_custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+    <script src="../js/scrollify_custom.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <style media="screen">.animsition-overlay-slide {background-color: #cbb0ab;}</style>
   </head>
   <body class="page-about">
@@ -32,11 +37,64 @@
         </div>
       </nav>
     </header>
-    <div class="main-container">
-      <div class="main-description">
-        <h1>Annyeonghaseyo.</h1>
-        <h2>I'm Wondo, and<br>Welcome to my portfolio.<br>Page: about</h2>
-      </div>
+    <div class="main-container-scrollify">
+      <section class="panel-home" data-section-name="home">
+        <div class="main-container">
+          <div class="main-description">
+            <div class="main-description-intro">
+              <h1>Annyeonghaseyo.</h1>
+              <!-- <h1 data-splitting id="splitting">Annyeonghaseyo.</h1> -->
+              <h2>I'm Wondo, and<br>Nice to e-meet you!</h2>
+            </div>
+            <div class="main-description-chat">
+              <ul>
+                <li class="chat-visitor"><p>Annyeo... Hey, tell me more?</p></li>
+                <li class="chat-wondo"><p>Sure. I’m an interaction designer at Fjord Singapore who zooms in and out between pixels to experience maps.</p>
+                  <p>And this is my digital space where you could picture me three-dimensionally through <a href="#">my Learnings/POVs</a> in design,
+                  <a href="#">career journey</a> with meaning and purpose, and <a href="#">interests</a>.</p></li>
+                <li class="chat-visitor"><p>Ok... tic toc tic toc.</p></li>
+                <li class="chat-wondo"><p>(!!) I hear you. Could you slide up one more time?<br>Or <a href="#">dive into works</a>!</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="panel-p1" data-section-name="p1">
+        <div class="project-description">
+          <div class="project-title">
+            <h3>Telco Rejuvenation</h3>
+            <p>2021</p>
+            <p>Interaction Design</p>
+            <hr>
+            <h4>Interaction model · Upsell/Cross-sell</h4>
+          </div>
+        </div>
+      </section>
+      <section class="panel-p2" data-section-name="p2">
+        <div class="project-description">
+          <div class="project-title">
+            <h3>Home Appliance Ownership Experience</h3>
+            <p>2021</p>
+            <p>Service & Interaction Design</p>
+            <hr>
+            <h4>E2E experience audit · Minumum Lovable Product</h4>
+          </div>
+        </div>
+      </section>
+      <section class="panel-p3" data-section-name="p3">
+        <div class="project-description">
+          <div class="project-title">
+            <h3>Augmenting peer-to-peer interaction in online learning</h3>
+            <p>2020</p>
+            <p>Interaction Design</p>
+            <hr>
+            <h4>Tangible Interaction · Post-COVID education</h4>
+          </div>
+        </div>
+      </section>
+      <section class="panel-contact" data-section-name="contact">
+      </section>
     </div>
+      <!-- <script> Splitting(); </script> -->
   </body>
 </html>
