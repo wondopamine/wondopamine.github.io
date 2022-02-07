@@ -36,10 +36,11 @@ body {
 
 header {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
+  /* background-color: #fff; */
 }
 
 nav {
@@ -51,10 +52,6 @@ nav {
   display: flex;
   align-items: center;
 }
-
-/* .nav-logo img {
-  vertical-align: middle;
-} */
 
 nav a {
   color: black;
@@ -82,7 +79,7 @@ nav a {
 }
 
 .main-description {
-  margin: 20vh 30px 0 30px;
+  margin: 0 30px 0 30px;
 }
 
 .main-description ul {
@@ -98,33 +95,6 @@ nav a {
 
 .main-description a {
   color: black;
-}
-
-.chat-visitor {
-  color: rgb(150, 150, 150);
-}
-
-section {
-  background-size: cover;
-}
-
-section:hover {
-  /* filter: brightness(70%); */
-}
-
-.panel-p1 {
-  background-image: url("https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-position: 20% 50%;
-}
-
-.panel-p2 {
-  background-image: url("https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-position: 60% 50%;
-}
-
-.panel-p3 {
-  background-image: url("https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-  background-position: 60% 50%;
 }
 
 .project-description {
@@ -168,6 +138,25 @@ hr {
   border-color: black;
 }
 
+@import url("https://use.typekit.net/mkk7wpw.css");
+
+@media (max-width: 500px) {
+  .nav-container ul li {font-size: 3.8vw; padding-left: 4vw;}
+  .main-description ul {padding: 7vh 0 0 4vw; font-size: 4vw; width: 100%;}
+  .main-description li p {line-height: 150%;}
+  h1 {font-size: 9vw; line-height: 130%;}
+  h2 {font-size: 8vw; line-height: 130%;}
+} */
+
+/* .nav-logo img {
+  vertical-align: middle;
+} */
+
+
+
+
+
+
 /* #splitting {
   font-family: "IBM Plex Sans Roman", Times;
   font-weight: 300;
@@ -197,14 +186,38 @@ hr {
 @font-face {
   font-family: "IBM Plex Sans Roman";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
-} */
-
-@import url("https://use.typekit.net/mkk7wpw.css");
-
-@media (max-width: 500px) {
-  .nav-container ul li {font-size: 3.8vw; padding-left: 4vw;}
-  .main-description ul {padding: 7vh 0 0 4vw; font-size: 4vw; width: 100%;}
-  .main-description li p {line-height: 150%;}
-  h1 {font-size: 9vw; line-height: 130%;}
-  h2 {font-size: 8vw; line-height: 130%;}
 }
+
+
+
+
+
+
+
+
+/* .chat-visitor {
+  color: rgb(150, 150, 150);
+}
+
+section {
+  background-size: cover;
+}
+
+section:hover {
+  filter: brightness(70%);
+}
+
+.panel-p1 {
+  background-image: url("https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-position: 20% 50%;
+}
+
+.panel-p2 {
+  background-image: url("https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-position: 60% 50%;
+}
+
+.panel-p3 {
+  background-image: url("https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-position: 60% 50%;
+} */
