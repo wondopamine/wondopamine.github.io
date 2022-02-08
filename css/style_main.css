@@ -36,19 +36,22 @@ body {
 
 header {
   width: 100%;
-  /* position: fixed; */
+  height: 50px;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: #fff; */
+  background-color: #fff;
 }
 
 nav {
-  margin: 10px 30px 10px 30px;
+  height: inherit;
+  margin: 0 50px 0 50px;
   display: flex;
 }
 
 .animsition-overlay {
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -73,13 +76,32 @@ nav a {
   display: flex;
 }
 
+.home-intro-title {
+  font-size: 5vw;
+  font-weight: 800;
+  text-align: center;
+}
+
+.home-intro-subtitle {
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-intro-description {
+  font-size: 1vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .nav-container li {
   font-size: 15px;
   padding-left: 6vw;
 }
 
 .main-description {
-  margin: 0 30px 0 30px;
+  margin: 20vh 50px 2vh 50px;
 }
 
 .main-description ul {
@@ -107,10 +129,58 @@ nav a {
 
 .project-title {
   display: inline-block;
+  margin-bottom: 40vh;
 }
 
-.project-title h3, h4, p {
-  margin: 1vh;
+.project-title h3, h4, h5, p {
+  margin: 0;
+}
+
+.project-challenge {
+  padding-bottom: 10vh;
+}
+
+.bottom-container {
+  margin: 10vh 50px 50vh 50px;
+}
+
+.bottom-container img {
+  width: 100%;
+  height: auto;
+}
+
+.copyright {
+  text-align: center;
+  margin: 5vh 0 5vh 0;
+}
+
+.sns-wrapper {
+  text-align: center;
+}
+
+.sns-wrapper img {
+  padding: 0 1vw 0 1vw;
+}
+
+footer {
+  margin-bottom: 30vh;
+}
+
+#button-seemore {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+}
+
+#button-top {
+  width: 100px;
+  height: auto;
+  top: 90%;
+  left: 90%;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
 }
 
 h1 {
@@ -127,21 +197,44 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  color: #fff;
+}
+
 h4 {
-  font-size: 11px;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+h5 {
+  color: #fff;
+  font-size: 2.75vw;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 2.75vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 300;
 }
 
 hr {
-  width:7%;
-  text-align:left;
-  margin-left:10px;
-  border-color: black;
+  width: 95%;
+  border-color: #EBEBEB;
 }
 
 @import url("https://use.typekit.net/mkk7wpw.css");
 
 @media (max-width: 500px) {
   .nav-container ul li {font-size: 3.8vw; padding-left: 4vw;}
+  .main-description {margin-bottom: 5vh;}
   .main-description ul {padding: 7vh 0 0 4vw; font-size: 4vw; width: 100%;}
   .main-description li p {line-height: 150%;}
   h1 {font-size: 9vw; line-height: 130%;}
