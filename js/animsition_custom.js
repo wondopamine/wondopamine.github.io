@@ -31,7 +31,7 @@ function colorHandler(self) {
   slide.style.transitionDuration = "2s";
 
   if(self.id == "color-home"){
-    slide.style.backgroundColor = "white";
+    slide.style.backgroundColor = "#FAF7F2";
   }else if(self.id == "color-work"){
     slide.style.backgroundColor = "#f0c8b6";
   }else if(self.id == "color-about"){

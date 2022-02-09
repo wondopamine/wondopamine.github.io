@@ -9,107 +9,104 @@
     <link rel="stylesheet" href="https://use.typekit.net/mkk7wpw.css">
     <link rel="stylesheet" href="css/style_main.css">
     <link rel="stylesheet" href="css/animsition.min.css">
-    <link rel="stylesheet" href="css/scroll_zoom.css">
     <script src="js/animsition.min.js"></script>
     <script src="js/animsition_custom.js"></script>
     <script src="js/scroll_zoom.js"></script>
-    <style media="screen">.animsition-overlay-slide {background-color: white;}</style>
+    <style media="screen">.animsition-overlay-slide {background-color: #FAF7F2;}</style>
   </head>
+
   <body class="page-home">
+
     <header>
-      <nav>
-        <div class="animsition-overlay" data-animsition-overlay="true">
-          <a class="nav-logo animsition-link" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
-            <!-- <img src="assets/images/logo.png" alt="logo" width="auto" height="35"> -->
-        </div>
-        <div class="nav-container">
-          <div class="animsition-overlay" data-animsition-overlay="true">
-            <ul>
-              <li><a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">work</a></li>
-              <li><a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
-              <li><a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
-              <li><a href="/sayhello" class="animsition-link" id="color-sayhello" onclick="colorHandler(this)">say hello</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="animsition-overlay" data-animsition-overlay="true">
+        <a class="logo animsition-link font-serif" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
+      </div>
+      <ul class="animsition-overlay" data-animsition-overlay="true">
+        <li><a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">work</a></li>
+        <li><a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
+        <li><a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+      </ul>
     </header>
-    <div class="main-container">
-      <div class="main-description">
-        <div class="home-intro-title">Wondo Jeong</div>
-        <div class="home-intro-subtitle">Interaction Designer at Fjord</div>
-        <div class="home-intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dol.</div>
-      </div>
-    </div>
-    <article>
-      <div class="full-screen-sticky p01">
-        <img class="project-image" src="assets/images/p01.png" alt="project 01 thumbnail">
-      </div>
-      <div class="container p01End">
-        <div class="project-title">
-          <h3>Telco Rejuvenation</h3>
-          <p>2021</p>
-          <p>Interaction Design</p>
-          <h4>Interaction model · Upsell/Cross-sell</h4>
-        </div>
-        <div class="content">
-          <h3>Challenge</h3>
-          <div class="project-challenge">
-            <h5>How might we rejuvenate Indonesia’s biggest telco that invites customers to consistent and delightful experiences at scale.</h5>
+
+    <main class="grid-container-fluid">
+      <div class="main-container">
+
+        <section class="home-intro">
+          <div class="home-intro-content">
+            <h1 class="home-intro-title font-serif">Wondo Jeong</h1>
+            <h2 class="home-intro-subtitle">Interaction Designer at Fjord</h2>
+            <h3 class="home-intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dol.</h3>
           </div>
-        </div>
-      </div>
-    </article>
+        </section>
 
-
-    <article>
-      <div class="full-screen-sticky p02">
-        <img class="project-image" src="assets/images/p02.png" alt="project 02 thumbnail">
-      </div>
-      <div class="container p02End">
-        <div class="project-title">
-          <h3>Augmenting peer-to-peer interaction in online learning</h3>
-          <p>2021</p>
-          <p>Interaction Design</p>
-          <h4>Tangible Interaction · Post-COVID education</h4>
-        </div>
-        <div class="content">
-          <h3>Challenge</h3>
-          <div class="project-challenge">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol.</h5>
+        <section>
+          <div class="scroll-zoom" id="p01">
+            <img class="home-project-thumbnail" id="p01Thumbnail" src="assets/images/p01.png" alt="project 01 thumbnail">
           </div>
-        </div>
-      </div>
-    </article>
-
-
-    <article>
-      <div class="full-screen-sticky p03">
-        <img class="project-image" src="assets/images/p03.png" alt="project 03 thumbnail">
-      </div>
-      <div class="container p03End">
-        <div class="project-title">
-          <h3>Motivational finance tracking for university students with less stress</h3>
-          <p>2020</p>
-          <p>Interaction Design</p>
-          <h4>Interaction model · Upsell/Cross-sell</h4>
-        </div>
-        <div class="content">
-          <h3>Challenge</h3>
-          <div class="project-challenge">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol.</h5>
+          <div class="home-project-container" id="p01End">
+            <div class="home-project-title">
+              <h1>Telco Rejuvenation</h1>
+              <h2>2021</h2>
+              <h2>Interaction Design</h2>
+              <h3>Interaction model · Upsell/Cross-sell</h3>
+            </div>
+            <div class="home-project-content">
+              <h1>Challenge</h1>
+              <p class="font-serif">How might we rejuvenate Indonesia’s biggest telco that invites customers to consistent and delightful experiences at scale.</p>
+            </div>
           </div>
+        </section>
+
+
+        <section>
+          <div class="scroll-zoom" id="p02">
+            <img class="home-project-thumbnail"  id="p02Thumbnail" src="assets/images/p02.png" alt="project 02 thumbnail">
+          </div>
+          <div class="home-project-container" id="p02End">
+            <div class="home-project-title">
+              <h1>Augmenting peer-to-peer<br>interaction in online learning</h1>
+              <h2>2020</h2>
+              <h2>Interaction Design</h2>
+              <h3>Tangible Interaction · Post-COVID education</h3>
+            </div>
+            <div class="home-project-content">
+              <h1>Challenge</h1>
+              <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol.</p>
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="scroll-zoom" id="p03">
+            <img class="home-project-thumbnail"  id="p03Thumbnail" src="assets/images/p03.png" alt="project 03 thumbnail">
+          </div>
+          <div class="home-project-container" id="p03End">
+            <div class="home-project-title">
+              <h1>Motivational finance tracking for<br>university students with less stress</h1>
+              <h2>2020</h2>
+              <h2>Interaction Design</h2>
+              <h3>Interaction model · Upsell/Cross-sell</h3>
+            </div>
+            <div class="home-project-content">
+              <h1>Challenge</h1>
+              <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-container">
+          <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)"><img id="button-seemore" src="assets/images/seemore.png"></a>
+          <div class="bottom-description">
+            <h6>Lastly, let me introduce my friend ‘ordinary man’,
+              who will help me tell the stories of challenges and/or insights from ordinary people like most of us.</h6>
+          </div>
+          <img src="assets/images/ordinaryman.png" alt="">
         </div>
+
       </div>
-    </article>
-    <div class="bottom-container">
-      <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)"><img id="button-seemore" src="assets/images/seemore.png"></a>
-      <div class="bottom-description">
-        <h6>Lastly, let me introduce my friend ‘ordinary man’,
-          who will help me tell the stories of challenges and/or insights from ordinary people like most of us.</h6>
-      </div>
-      <img src="assets/images/ordinaryman.png" alt="">
-    </div>
+    </main>
+
     <hr>
     <footer>
       <div class="copyright">
