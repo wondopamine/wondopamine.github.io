@@ -13,18 +13,24 @@
   font-style: normal;
 }
 
+.font-white {
+  color: #FAF7F2;
+}
+
 
 
 /* BODY BG COLOR *************************************/
 /*****************************************************/
 
 .page-home {background-color: #FAF7F2;}
-.page-work {background-color: #f0c8b6;}
+.page-work {background-color: black;}
 .page-about {background-color: #cbb0ab;}
 .page-blog {background-color: #817f95;}
-.page-sayhello {background-color: #5c678a;}
 
-
+.page-home header {background-color: #FAF7F2;}
+.page-work header {background-color: black;}
+.page-about header {background-color: #cbb0ab;}
+.page-blog header {background-color: #817f95;}
 
 /* GRID **********************************************/
 /*****************************************************/
@@ -77,6 +83,14 @@ section {
   justify-content: center;
 }
 
+.intro-title {
+  grid-column: 1/13;
+}
+
+.project-wrapper {
+  grid-column: 2/7;
+}
+
 /* 1440- { columns: 12, margin: --px, gutter: --px } */
 @media(max-width: 1439px){
   .grid-container {width: 100%; padding: 0 2rem; grid-gap: 1rem;}
@@ -110,7 +124,7 @@ header {
   width: 100%;
   height: 64px;
   position: fixed;
-  background-color: #FAF7F2;
+  /* background-color: #FAF7F2; */
 }
 
 header a {
@@ -312,7 +326,7 @@ footer a {
 #button-top {
   width: 10em;
   height: auto;
-  bottom: 10em;
+  bottom: 2em;
   right: 2em;
   position: fixed;
   z-index: 2;
@@ -321,6 +335,20 @@ footer a {
 
 
 
+/* HOME-BOTTOM ***************************************/
+/*****************************************************/
+
+.intro-title {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.project-wrapper > img {
+  object-fit: cover;
+  width: 100%;
+}
 
 
 
