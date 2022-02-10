@@ -16,7 +16,7 @@ $(document).ready(function() {
     let borderWidthVal = 0;
     let borderRadiusVal = 0;
     let marginLeftVal = 0;
-    console.log(scrollTop, p01Top, p02Top, p03Top);
+    // console.log(scrollTop, p01Top, p02Top, p03Top);
 
     if (scrollTop > lastScrollTop) {   // scroll down
       brightnessVal = 50;
@@ -62,17 +62,6 @@ $(document).ready(function() {
       }
     }
     lastScrollTop = scrollTop;
-
-    // if(scrollTop >= p01Top && scrollTop <= p01Top) {
-    //   $('#p01').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-    //   $('#p01').css('border-width', borderWidthVal);
-    // } else if(scrollTop >= p02Top && scrollTop <= p02Top) {
-    //   $('#p02').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-    //   $('#p02').css('border-width', borderWidthVal);
-    // } else if(scrollTop >= p03Top && scrollTop <= p03Top) {
-    //   $('#p03').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-    //   $('#p03').css('border-width', borderWidthVal);
-    // }
   });
 });
 
