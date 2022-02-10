@@ -33,7 +33,7 @@ function colorHandler(self) {
   if(self.id == "color-home"){
     slide.style.backgroundColor = "#FAF7F2";
   }else if(self.id == "color-work"){
-    slide.style.backgroundColor = "#f0c8b6";
+    slide.style.backgroundColor = "black";
   }else if(self.id == "color-about"){
     slide.style.backgroundColor = "#cbb0ab";
   }else if(self.id == "color-blog"){
