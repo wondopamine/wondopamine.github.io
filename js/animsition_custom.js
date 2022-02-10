@@ -38,7 +38,5 @@ function colorHandler(self) {
     slide.style.backgroundColor = "#cbb0ab";
   }else if(self.id == "color-blog"){
     slide.style.backgroundColor = "#817f95";
-  }else if(self.id == "color-sayhello"){
-    slide.style.backgroundColor = "#5c678a";
   }
 }
