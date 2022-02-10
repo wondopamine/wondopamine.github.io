@@ -16,7 +16,7 @@ $(document).ready(function() {
     let borderWidthVal = 0;
     let borderRadiusVal = 0;
     let marginLeftVal = 0;
-    // console.log(scrollTop, p01Top, p02Top, p03Top);
+    console.log(scrollTop, $('#p01').children('.scroll-zoom').offset().top, p01Top);
 
     if (scrollTop > lastScrollTop) {   // scroll down
       brightnessVal = 50;
@@ -24,18 +24,18 @@ $(document).ready(function() {
       borderRadiusVal = 0;
       marginLeftVal = 0;
       if(scrollTop >= p01Top) {
-        $('#p01').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p01').css('border-width', borderWidthVal+'em');
+        $('p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p01').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p01Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p01End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop >= p02Top) {
-        $('#p02').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p02').css('border-width', borderWidthVal+'em');
+        $('#p02Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p02').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p02Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p02End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop >= p03Top) {
-        $('#p03').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p03').css('border-width', borderWidthVal+'em');
+        $('#p03Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p03').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p03Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p03End').css('margin-left', marginLeftVal+'em');
       }
@@ -45,18 +45,18 @@ $(document).ready(function() {
       borderRadiusVal = 30;
       marginLeftVal = 9.5;
       if(scrollTop <= p01Top) {
-        $('#p01').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p01').css('border-width', borderWidthVal+'em');
+        $('p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p01').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p01Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p01End').css('margin-left', marginLeftVal+'em');
-      } if(scrollTop <= p02Top) {
-        $('#p02').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p02').css('border-width', borderWidthVal+'em');
+      } if(scrollTop >= p02Top) {
+        $('#p02Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p02').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p02Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p02End').css('margin-left', marginLeftVal+'em');
-      } if(scrollTop <= p03Top) {
-        $('#p03').children('.home-project-thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p03').css('border-width', borderWidthVal+'em');
+      } if(scrollTop >= p03Top) {
+        $('#p03Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p03').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p03Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p03End').css('margin-left', marginLeftVal+'em');
       }
