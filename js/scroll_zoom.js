@@ -4,7 +4,7 @@ $(document).ready(function() {
   let p02Top = $('#p02').offset().top;
   let p03Top = $('#p03').offset().top;
 
-  $(window).ready(function() {
+  $(window).resize(function() {
     p01Top = $('#p01').offset().top;
     p02Top = $('#p02').offset().top;
     p03Top = $('#p03').offset().top;
@@ -16,6 +16,7 @@ $(document).ready(function() {
     let borderWidthVal = 0;
     let borderRadiusVal = 0;
     let marginLeftVal = 0;
+    console.log(scrollTop, p01Top, p02Top, p03Top);
 
     if (scrollTop > lastScrollTop) {   // scroll down
       brightnessVal = 50;
