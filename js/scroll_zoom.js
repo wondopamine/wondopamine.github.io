@@ -11,6 +11,9 @@ $(document).ready(function() {
     p01Top = $('#p01').offset().top;
     p02Top = $('#p02').offset().top;
     p03Top = $('#p03').offset().top;
+    p01Bottom = p01Top + ($(window).height() * 1/2);
+    p02Bottom = p02Top + ($(window).height() * 1/2);
+    p03Bottom = p03Top + ($(window).height() * 1/2);
   });
 
   $(window).scroll(function(event) {
