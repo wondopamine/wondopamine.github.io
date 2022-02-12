@@ -32,11 +32,14 @@
 .page-about header {background-color: #cbb0ab;}
 .page-blog header {background-color: #817f95;}
 
+
+
 /* GRID **********************************************/
 /*****************************************************/
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* default: 1440+ { columns: 12, margin: 32px, gutter: 16px } */
@@ -123,6 +126,7 @@ section {
 header {
   width: 100%;
   height: 64px;
+  top: 0;
   position: fixed;
   /* background-color: #FAF7F2; */
 }
@@ -195,7 +199,7 @@ html {
   box-sizing: inherit;
 }
 
-section {
+.page-home section {
   margin: 0 -2em;
 }
 
@@ -292,7 +296,7 @@ footer {
   width: 100%;
   height: 10em;
   background-color: #25292E;
-  margin-bottom: 0;
+  margin-top: -10em;
 }
 
 footer a {
@@ -351,7 +355,6 @@ footer a {
   width: 100%;
   /* max-height: 100%; */
 }
-
 
 
 /* GRADIENT-ANIMATION ********************************/

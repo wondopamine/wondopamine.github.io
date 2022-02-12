@@ -12,6 +12,9 @@
     <script src="../js/animsition.min.js"></script>
     <script src="../js/animsition_custom.js"></script>
     <style media="screen">.animsition-overlay-slide {background-color: black;}</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+    <script src="../js/scrollify_custom.js"></script>
+    <script src="../js/to_top.js"></script>
   </head>
 
   <body class="page-work">
@@ -30,40 +33,59 @@
     </header>
 
     <main>
-      <div class="grid-container">
+      <div class="main-container-scrollify">
 
-        <h1 class="intro-title font-serif font-white">Fetured case studies</h1>
-        <div class="project-wrapper">
-          <img src="../assets/images/p01.png" alt="project 01 thumbnail">
-        </div>
+        <section class="panel-2" data-section-name="featured">
+          <div class="grid-container">
+            <h1 class="intro-title font-serif font-white">Fetured case studies</h1>
+            <div class="project-wrapper">
+              <img src="../assets/images/p01.png" alt="project 01 thumbnail">
+              <img src="../assets/images/p01.png" alt="project 01 thumbnail">
+              <img src="../assets/images/p01.png" alt="project 01 thumbnail">
+              <img src="../assets/images/p01.png" alt="project 01 thumbnail">
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-2" id="visual" data-section-name="visual" style="background-color: green;">
+        </section>
+
+        <section class="panel-3" data-section-name="engineering">
+          <div class="grid-container">
+            <h1 class="intro-title font-serif font-white">Fetured case studies</h1>
+            <div class="project-wrapper">
+              <img src="../assets/images/p01.png" alt="project 01 thumbnail">
+            </div>
+          </div>
+        </section>
 
       </div>
     </main>
 
-    <!-- <footer>
-        <div class="footer-bar">
-          <div class="footer-content">
-            <h1 class="copyright">© Wondo Jeong</h1>
-            <div class="sns-wrapper">
-              <a href="https://www.linkedin.com/"><img src="../assets/images/linkedin.png" alt="linkedin"></a>
-              <a href="https://medium.com/"><img src="../assets/images/medium.png" alt="medium"></a>
-              <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="instagram"></a>
-              <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img src="../assets/images/email.png" alt="email"></a>
-            </div>
+    <footer>
+      <div class="footer-bar">
+        <div class="footer-content">
+          <h1 class="copyright">© Wondo Jeong</h1>
+          <div class="sns-wrapper">
+            <a href="https://www.linkedin.com/"><img src="../assets/images/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/"><img src="../assets/images/medium.png" alt="medium"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+            <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img src="../assets/images/email.png" alt="email"></a>
           </div>
-          <div class="footer-nav animsition-overlay" data-animsition-overlay="true">
-            <a href="/" class="animsition-link" id="color-home" onclick="colorHandler(this)">HOME</a>
-            <span>/</span>
-            <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">WORK</a>
-            <span>/</span>
-            <a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">ABOUT</a>
-            <span>/</span>
-            <a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">BLOG</a>
-          </div>
+        </div>
+        <div class="footer-nav animsition-overlay" data-animsition-overlay="true">
+          <a href="/" class="animsition-link" id="color-home" onclick="colorHandler(this)">HOME</a>
+          <span>/</span>
+          <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">WORK</a>
+          <span>/</span>
+          <a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">ABOUT</a>
+          <span>/</span>
+          <a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">BLOG</a>
+        </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <a onclick="toTop()"><img id="button-top" src="../assets/images/backtotop.png"></a>
+    <a onclick="scrollifyTop()"><img id="button-top" src="../assets/images/backtotop.png"></a>
 
   </body>
 </html>
