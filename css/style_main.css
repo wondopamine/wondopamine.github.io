@@ -28,7 +28,7 @@
 .page-blog {background-color: #817f95;}
 
 .page-home header {background-color: #FAF7F2;}
-.page-work header {background-color: black;}
+.page-work header {background-color: black; -webkit-transition: background-color .3s ease-in-out; transition: background-color .3s ease-in-out;}
 .page-about header {background-color: #cbb0ab;}
 .page-blog header {background-color: #817f95;}
 
@@ -86,12 +86,12 @@ section {
   justify-content: center;
 }
 
-.intro-title {
-  grid-column: 1/13;
+.project-wrapper:nth-child(odd) {
+  grid-column: 2/7;
 }
 
-.project-wrapper {
-  grid-column: 2/7;
+.project-wrapper:nth-child(even) {
+  grid-column: 7/12;
 }
 
 /* 1440- { columns: 12, margin: --px, gutter: --px } */
@@ -134,6 +134,10 @@ header {
 header a {
   color: black;
   text-decoration: none;
+}
+
+header .current {
+  text-decoration: underline;
 }
 
 .logo {
@@ -343,18 +347,43 @@ footer a {
 /* HOME-BOTTOM ***************************************/
 /*****************************************************/
 
-.intro-title {
-  font-size: 4rem;
-  font-weight: 800;
-  text-align: center;
-  margin-top: 2em;
-}
-
 .project-wrapper > img {
   object-fit: cover;
   width: 100%;
   /* max-height: 100%; */
 }
+
+
+.view .no {
+  color: white;
+}
+.view .no:target {
+  color: blue;
+}
+
+
+
+/* WORK-SECTION **************************************/
+/*****************************************************/
+
+.intro-title {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 2em 0;
+}
+
+#panel-2 {
+  background-color: #00581B;
+}
+
+.project-wrapper {
+  margin-bottom: 1em;
+}
+
+.project-wrapper h2 {color: #FAF7F2; font-size: 1rem; font-weight: 500; line-height: 1;}
+.project-wrapper h3 {color: #FAF7F2; font-size: 1rem; font-weight: 300; line-height: 1;}
+
 
 
 /* GRADIENT-ANIMATION ********************************/
