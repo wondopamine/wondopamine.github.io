@@ -9,7 +9,9 @@ function scrollifyTop() {
   $.scrollify.move("#featured");
 }
 
-// $.scrollify.update() when the accordions open or close.
+$(document).ready(function() {
+  $.scrollify.update();
+});
 
 $(document).scroll(function () {
    $('section').each(function () {
