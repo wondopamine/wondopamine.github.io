@@ -102,6 +102,10 @@ section {
   grid-column: 2/12;
 }
 
+.project-wrapper-f-c > img {
+  grid-column: 1/5;
+}
+
 /* 1440- { columns: 12, margin: --px, gutter: --px } */
 @media(max-width: 1439px){
   .grid-container {width: 100%; padding: 0 2rem; grid-gap: 1rem;}
@@ -282,7 +286,6 @@ html {
   height: 70vh;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-content: center;
 }
 
@@ -354,28 +357,6 @@ footer a {
   cursor: pointer;
 }
 
-
-
-/* HOME-BOTTOM ***************************************/
-/*****************************************************/
-
-.project-wrapper-f-o > img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 20px;
-  /* max-height: 100%; */
-}
-
-
-.view .no {
-  color: white;
-}
-.view .no:target {
-  color: blue;
-}
-
-
-
 /* WORK-SECTION **************************************/
 /*****************************************************/
 
@@ -386,15 +367,32 @@ footer a {
 .intro-title {font-size: 4rem; font-weight: 800; text-align: center; margin: 3em 0 1.5em 0;}
 .intro-subtitle {font-size: 1.9rem; font-weight: 300; margin-top: 2em; margin-bottom: 1.2em;}
 .project-wrapper-f-o h2 {color: #FAF7F2; font-size: 1rem; font-weight: 500; line-height: 1; margin-bottom: 0;}
-.project-wrapper-f-o h3 {color: #FAF7F2; font-size: 0.9rem; font-weight: 300; line-height: 1; margin-top: 0.4em;}
+.project-wrapper-f-o h3 {color: #FAF7F2; font-size: 0.9rem; font-weight: 300; line-height: 1; margin-bottom: 0;}
 
 .project-title-f-o {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .project-wrapper-f-o {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.project-wrapper-f-o > img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+  /* max-height: 100%; */
+}
+
+.project-wrapper-f-c > img {
+  object-fit: cover;
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+  /* max-height: 100%; */
 }
 
 .project-wrapper-f-c {
@@ -402,6 +400,10 @@ footer a {
   margin-bottom: 1.5em;
   border: 3px solid #FAF7F2;
   border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 16px;
+
 }
 
 
