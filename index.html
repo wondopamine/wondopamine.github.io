@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/mkk7wpw.css">
     <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_home.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <script src="js/animsition.min.js"></script>
     <script src="js/animsition_custom.js"></script>
@@ -21,27 +22,30 @@
     <header>
       <div class="nav-bar">
         <div class="animsition-overlay" data-animsition-overlay="true">
-          <a class="logo animsition-link font-serif" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
+          <a class="logo animsition-link font-serif font-black" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
         </div>
         <ul class="animsition-overlay" data-animsition-overlay="true">
-          <li><a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">work</a></li>
-          <li><a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
-          <li><a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+          <li><a href="/work" class="animsition-link font-sans-serif font-black" id="color-work" onclick="colorHandler(this)">work</a></li>
+          <li><a href="/about" class="animsition-link font-sans-serif font-black" id="color-about" onclick="colorHandler(this)">about</a></li>
+          <li><a href="/blog" class="animsition-link font-sans-serif font-black" id="color-blog" onclick="colorHandler(this)">blog</a></li>
         </ul>
       </div>
     </header>
 
     <main>
+
+      <section>
+        <div class="grid-container">
+          <div class="intro-wrapper">
+            <h1 class="home-intro-title font-serif">Wondo Jeong</h1>
+            <h2 class="home-intro-subtitle">Interaction Designer at Fjord</h2>
+            <h3 class="home-intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dol.</h3>
+          </div>
+        </div>
+      </section>
+
       <div class="grid-container">
         <div class="main-container">
-
-          <div class="home-intro-container">
-            <div class="home-intro-content">
-              <h1 class="home-intro-title font-serif">Wondo Jeong</h1>
-              <h2 class="home-intro-subtitle">Interaction Designer at Fjord</h2>
-              <h3 class="home-intro-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dol.</h3>
-            </div>
-          </div>
 
           <section id="p01">
             <div class="scroll-zoom">
@@ -98,23 +102,29 @@
               </div>
             </div>
           </section>
-          <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)"><img id="button-seemore" src="assets/images/seemore.png"></a>
-
-          <div class="home-bottom-container">
-            <div class="home-bottom-content">
-              <p>Lastly, meet <b>ordinary man</b>! Who tells the stories about people like us.</p>
-              <img class="ordinary-man" src="assets/images/ordinaryman.png" alt="ordinary man">
-            </div>
-          </div>
 
         </div>
       </div>
+
+      <div class="button-container">
+        <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)"><img id="button-seemore" src="assets/images/seemore.png"></a>
+      </div>
+
+      <section>
+        <div class="grid-container">
+          <div class="outro-container">
+            <p>Lastly, meet <b>ordinary man</b>! Who tells the stories about people like us.</p>
+            <img src="assets/images/ordinaryman.png" alt="ordinary man">
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer>
       <div class="footer-bar">
         <div class="footer-content">
-          <h1 class="copyright">© Wondo Jeong</h1>
+          <h1 class="copyright font-sans-serif font-white">© Wondo Jeong</h1>
           <div class="sns-wrapper">
             <a href="https://www.linkedin.com/"><img src="assets/images/linkedin.png" alt="linkedin"></a>
             <a href="https://medium.com/"><img src="assets/images/medium.png" alt="medium"></a>
@@ -123,13 +133,13 @@
           </div>
         </div>
         <div class="footer-nav animsition-overlay" data-animsition-overlay="true">
-          <a href="/" class="animsition-link" id="color-home" onclick="colorHandler(this)">HOME</a>
-          <span>/</span>
-          <a href="/work" class="animsition-link" id="color-work" onclick="colorHandler(this)">WORK</a>
-          <span>/</span>
-          <a href="/about" class="animsition-link" id="color-about" onclick="colorHandler(this)">ABOUT</a>
-          <span>/</span>
-          <a href="/blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">BLOG</a>
+          <a href="/" class="animsition-link font-sans-serif font-white" id="color-home" onclick="colorHandler(this)">HOME</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/work" class="animsition-link font-sans-serif font-white" id="color-work" onclick="colorHandler(this)">WORK</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/about" class="animsition-link font-sans-serif font-white" id="color-about" onclick="colorHandler(this)">ABOUT</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/blog" class="animsition-link font-sans-serif font-white" id="color-blog" onclick="colorHandler(this)">BLOG</a>
         </div>
       </div>
     </footer>
