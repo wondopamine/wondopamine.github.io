@@ -69,22 +69,19 @@ main .outro-container > img {
 
 
 
-/* HOME-PROJECT **************************************/
+/* SCROLL-ZOOM ***************************************/
 /*****************************************************/
-
-html {
-  box-sizing: border-box;
-}
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-.page-home section {
+main .project-wrapper {
+  grid-column: 1/13;
   margin: 0 -2em;
 }
 
-.scroll-zoom {
+main .scroll-zoom {
   position: relative;
   position: sticky;
   top: 0;
@@ -99,7 +96,7 @@ html {
   overflow: hidden;
 }
 
-.scroll-zoom img, .scroll-zoom video {
+main .scroll-zoom img, main .scroll-zoom video {
   position: absolute;
   display: block;
   width: 100%;
@@ -111,29 +108,64 @@ html {
      object-fit: cover;
 }
 
-.home-project-container {
+main .project-thumbnail {
+  border-radius: 30px;
+  -webkit-transition: border-radius .3s ease-in-out;
+  transition: border-radius .3s ease-in-out;
+}
+
+main .project-title {
   margin-left: 4.5em; /* 9.5 */
   -webkit-transition: margin-bottom .3s ease-in-out;
   transition: margin-left .3s ease-in-out;
   padding-left: 3.5em;
   min-height: 75vh;
   max-width: 55%;
+  margin-top: -75vh;
 }
 
-.home-project-thumbnail {
-  border-radius: 30px;
-  -webkit-transition: border-radius .3s ease-in-out;
-  transition: border-radius .3s ease-in-out;
+main .project-title > h1 {
+  margin-top: 40vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
-.home-project-container {margin-top: -30vh;}
-.home-project-title {margin-bottom: 40vh;}
-.home-project-content {padding-bottom: 50vh;}
+main .project-title > h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
 
-.home-project-container h1 {color: #FAF7F2; font-size: 1.5rem; font-weight: 600; line-height: 1;}
-.home-project-container h2 {color: #FAF7F2; font-size: 1.5rem; font-weight: 300; line-height: 1;}
-.home-project-container h3 {color: #FAF7F2; font-size: 1.1rem; font-weight: 300; line-height: 1;}
-.home-project-container p {margin: 0; color: #FAF7F2; font-size: 3.2rem; font-weight: 500; line-height: 1.4;}
+main .project-title > h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+main .project-title > p {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 50vh;
+}
+
+main .project-wrapper a {
+  text-decoration: none;
+}
+
+main .project-title:hover {
+  text-decoration: underline;
+  color: #FAF7F2;
+  /* text-underline-position: under; */
+}
+
+
+
+
+/* BUTTON ********************************************/
+/*****************************************************/
 
 #button-seemore {
   width: 13.5em;
@@ -144,16 +176,22 @@ html {
 
 
 
-/* GRID **********************************************/
+/* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-@media(max-width: 1439px){
+/* 1440- { columns: 12, margin: 32px, gutter: 16px } */
+
+@media(max-width: 1439px) {
   main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
   main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;}
   main .intro-wrapper > h3 {font-size: calc(0.5rem + 0.5vw) !important;}
-  .home-project-container h1 {font-size: calc(0.8rem + 0.8vw) !important;}
-  .home-project-container h2 {font-size: calc(0.8rem + 0.8vw) !important;}
-  .home-project-container h3 {font-size: calc(0.6rem + 0.6vw) !important;}
-  .home-project-container p {font-size: calc(1.7rem + 1.7vw) !important;}
+  main .project-title > h1 {font-size: calc(0.8rem + 0.8vw) !important;}
+  main .project-title > h2 {font-size: calc(0.8rem + 0.8vw) !important;}
+  main .project-title > h3 {font-size: calc(0.6rem + 0.6vw) !important;}
+  main .project-title > p {font-size: calc(1.7rem + 1.7vw) !important;}
   main .outro-container > p {font-size: calc(1.1rem + 1.1vw) !important;}
+}
+
+/* 599- { columns: 12, margin: 16px, gutter: 0px } */
+@media(max-width: 599px) {
 }
