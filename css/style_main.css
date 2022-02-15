@@ -21,6 +21,9 @@
   color: #FAF7F2;
 }
 
+.font-gray {
+  color: #969DA4;
+}
 
 
 /* BODY **********************************************/
@@ -43,7 +46,7 @@ body {
 
 header {
   width: 100%;
-  height: 64px;
+  height: 4em;
   top: 0;
   position: fixed;
 }
@@ -102,7 +105,6 @@ main .button-container {
 }
 
 main .top-container {
-  box-sizing: border-box;
   position: sticky;
   height: 3em;
   bottom: 0;
@@ -177,29 +179,13 @@ footer a, span {
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-/* 1440+ { columns: 12, margin: 32px, gutter: 16px } */
+/* > 1440 { columns: 12, margin: 32px, gutter: 16px } */
+header .nav-bar {width: 1440px; padding: 0 2rem;}
+main .grid-container {width: 1440px; padding: 0 2rem; grid-gap: 1rem;}
+main .top-container {max-width: 1440px;}
+footer .footer-bar {width: 1440px;}
 
-header .nav-bar {
-  width: 1440px;
-  padding: 0 2rem;
-}
-
-main .grid-container {
-  width: 1440px;
-  padding: 0 2rem;
-  grid-gap: 1rem;
-}
-
-main .top-container {
-  max-width: 1440px;
-}
-
-footer .footer-bar {
-  width: 1440px;
-}
-
-/* 1440- { columns: 12, margin: 32px, gutter: 16px } */
-
+/* < 1440 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1439px){
   header .nav-bar {width: 100%;}
   main .grid-container {width: 100%;}
@@ -207,67 +193,14 @@ footer .footer-bar {
   footer .footer-bar {width:100%;}
 }
 
-/* 599- { columns: 12, margin: 16px, gutter: 0px } */
+/* < 905 { columns: 12, margin: 16px, gutter: 0px } */
+@media(max-width: 904px){
+}
 
+/* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px){
-  .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
-  .nav-bar {width: 100%; padding: 0 1rem;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.intro-title, .intro-subtitle {
-  grid-column: 2/12;
-}
-
-.intro-subtitle-2 {grid-column: 2/11;}
-
-.project-wrapper-f-o:nth-child(odd) {
-  grid-column: 2/7;
-}
-
-.project-wrapper-f-o:nth-child(even) {
-  grid-column: 7/12;
-}
-
-.project-wrapper-f-c {
-  grid-column: 2/12;
-}
-
-.project-wrapper-f-c > img {
-  grid-column: 1/5;
-}
-
-.project-title-f-c {
-  grid-column: 5/10;
-}
-
-.project-wrapper-v:nth-child(odd) {
-  grid-column: 2/7;
-}
-
-.project-wrapper-v:nth-child(even) {
-  grid-column: 7/12;
-  margin-top: 4em;
-}
-
-.flex-container {
-  grid-column: 2/12;
-  display: flex;
-  justify-content: space-between;
+  header.nav-bar {width: 100%; padding: 0 1rem;}
+  main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
 }
 
 

@@ -179,8 +179,10 @@ main .project-title:hover {
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-/* 1440- { columns: 12, margin: 32px, gutter: 16px } */
+/* > 1440 { columns: 12, margin: 32px, gutter: 16px } */
 
+
+/* < 1440 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1439px) {
   main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
   main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;}
@@ -192,6 +194,10 @@ main .project-title:hover {
   main .outro-container > p {font-size: calc(1.1rem + 1.1vw) !important;}
 }
 
-/* 599- { columns: 12, margin: 16px, gutter: 0px } */
+/* < 905 { columns: 12, margin: 16px, gutter: 0px } */
+@media(max-width: 904px){
+}
+
+/* < 599 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
 }
