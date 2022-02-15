@@ -32,17 +32,17 @@ $(document).ready(function() {
       if(scrollTop >= p01Top) {
         console.log(brightnessVal);
         $('#p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p01').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p01').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p01Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p01End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop >= p02Top) {
         $('#p02Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p02').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p02').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p02Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p02End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop >= p03Top) {
         $('#p03Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p03').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p03').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p03Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p03End').css('margin-left', marginLeftVal+'em');
       }
@@ -52,18 +52,18 @@ $(document).ready(function() {
       borderRadiusVal = 30;
       marginLeftVal = 4.5;  // 4.5
       if(scrollTop < p01Bottom) {
-        $('p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p01').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
+        $('#p01').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p01Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p01End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop < p02Bottom) {
         $('#p02Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p02').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p02').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p02Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p02End').css('margin-left', marginLeftVal+'em');
       } if(scrollTop < p03Bottom) {
         $('#p03Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
-        $('#p03').children('.scroll-zoom').css('border-width', borderWidthVal+'em');
+        $('#p03').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p03Thumbnail').css('border-radius', borderRadiusVal+'px');
         $('#p03End').css('margin-left', marginLeftVal+'em');
       }
