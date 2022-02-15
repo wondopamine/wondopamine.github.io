@@ -1,7 +1,9 @@
 $(function() {
   $.scrollify({
     section : "section",
-    overflowScroll: true
+    overflowScroll: true,
+    interstitialSection: ".footer-bar",
+    setHeights: true,
   });
 });
 
