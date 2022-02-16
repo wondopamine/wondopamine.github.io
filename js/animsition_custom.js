@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $(".animsition-overlay").animsition({
     inClass: 'overlay-slide-in-top',
-    outClass: 'overlay-slide-out-top',
+    outClass: 'overlay-slide-out-bottom',
     inDuration: 1500,
-    outDuration: 800,
+    outDuration: 1500,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -23,12 +23,18 @@ $(document).ready(function() {
   });
 });
 
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload()
+    }
+};
+
 
 function colorHandler(self) {
   const slide = document.querySelector(".animsition-overlay-slide");
 
   // slide.style.transitionDelay = ".5s";
-  slide.style.transitionDuration = "2s";
+  slide.style.transitionDuration = "1.5s";
 
   if(self.id == "color-home"){
     slide.style.backgroundColor = "#FAF7F2";
