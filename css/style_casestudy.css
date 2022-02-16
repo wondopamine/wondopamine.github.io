@@ -1,0 +1,178 @@
+/* BODY BG COLOR *************************************/
+/*****************************************************/
+body {
+  background-color: white;
+}
+
+
+
+/* HEADER ********************************************/
+/*****************************************************/
+
+header {
+  background-color: #FAF7F2;
+}
+
+header .nav-bar {
+  box-sizing: border-box;
+}
+
+
+
+/* MAIN **********************************************/
+/*****************************************************/
+
+main .grid-container {
+  box-sizing: border-box;
+}
+
+main .flex-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .intro-wrapper {
+  background-color: #FAF7F2;
+  padding-bottom: 10em;
+}
+
+main .summary-wrapper {
+  margin-bottom: 8em;
+}
+
+main .challenge-wrapper {
+  background-color: #FAF7F2;
+  padding-top: 6em;
+  margin-bottom: 8em;
+}
+
+main h1 {
+  font-size: 3.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+main h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
+main h3 {
+  font-size: 2.7rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+main h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main h6 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+main p {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+main .intro-case {  /* h5 */
+  grid-column: 2/4;
+  margin: 10em 0 0 0;
+}
+
+main .intro-title { /* h1 */
+  grid-column: 2/8;
+  margin: 0;
+}
+
+main .intro-role {  /* h6 */
+  grid-column: 10/12;
+  margin: 0;
+}
+
+main .intro-role > span { /* h6 */
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: inherit;
+}
+
+main .intro-keyword { /* h6 */
+  grid-column: 2/8;
+  margin: 2em 0;
+}
+
+main .intro-tasks {  /* h6 */
+  grid-column: 10/12;
+  margin: 0;
+}
+
+main .summary-image {
+  grid-column: 2/12;
+  object-fit: cover;
+  width: 100%;
+  margin-top: -8em;
+  border-radius: 20px;
+}
+
+main .summary-title, .approach-title {
+  grid-column: 3/6;
+  margin: 1em 0 0.5em 0;
+}
+
+main .summary-description {
+  grid-column: 3/11;
+  margin: 0.5em 0;
+}
+
+main .challenge-title {
+  margin: 0;
+}
+
+main .challenge-question {
+  width: 47%;
+  text-align: center;
+}
+
+main .approach-description {
+  grid-column: 3/11;
+}
+
+main .top-container{
+  box-sizing: border-box;
+}
+
+
+
+/* BUTTON ********************************************/
+/*****************************************************/
+
+#button-resume {
+  width: auto;
+  height: 2.8em;
+  display: block;
+  margin: 2.5em 4em 3em 0;
+}
+
+#button-email-me {
+  width: auto;
+  height: 2.8em;
+  display: block;
+  margin: 2.5em 0 3em 0;
+}
+
+
+
+/* FOOTER ********************************************/
+/*****************************************************/
+
+footer .footer-bar, img {
+  box-sizing: border-box;
+}

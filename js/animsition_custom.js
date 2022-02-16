@@ -38,11 +38,13 @@ function colorHandler(self) {
 
   if(self.id == "color-home"){
     slide.style.backgroundColor = "#FAF7F2";
-  }else if(self.id == "color-work"){
+  } else if(self.id == "color-work"){
     slide.style.backgroundColor = "black";
-  }else if(self.id == "color-about"){
+  } else if(self.id == "color-about"){
     slide.style.backgroundColor = "#FAF7F2";
-  }else if(self.id == "color-blog"){
+  } else if(self.id == "color-blog"){
+    slide.style.backgroundColor = "#FAF7F2";
+  } else if(self.id == "color-casestudy"){
     slide.style.backgroundColor = "#FAF7F2";
   }
 }
