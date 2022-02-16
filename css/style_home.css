@@ -168,8 +168,8 @@ main .project-title:hover {
 /*****************************************************/
 
 #button-seemore {
-  width: 13.5em;
-  height: auto;
+  width: auto;
+  height: 2.8em;
   display: block;
   margin: 5em auto;
 }
