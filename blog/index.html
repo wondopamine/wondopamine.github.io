@@ -8,35 +8,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/mkk7wpw.css">
     <link rel="stylesheet" href="../css/style_main.css">
+    <link rel="stylesheet" href="../css/style_blog.css">
     <link rel="stylesheet" href="../css/animsition.min.css">
     <script src="../js/animsition.min.js"></script>
     <script src="../js/animsition_custom.js"></script>
     <style media="screen">.animsition-overlay-slide {background-color: #FAF7F2;}</style>
+    <script src="../js/to_top.js"></script>
   </head>
-  <body class="page-blog">
+  <body class="page-about">
+    <div
+    class="animsition-overlay"
+    data-animsition-overlay="true"
+    data-animsition-in-class="overlay-slide-in-top"
+    data-animsition-in-duration="1500"
+    data-animsition-out-class="overlay-slide-out-bottom"
+    data-animsition-out-duration="1500"
+    >
+
     <header>
-      <nav>
-        <div class="animsition-overlay" data-animsition-overlay="true">
-          <a class="nav-logo animsition-link" href="../" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
-            <!-- <img src="assets/images/logo.png" alt="logo" width="auto" height="35"> -->
+      <div class="nav-bar">
+        <a class="logo animsition-link font-serif font-black" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
+        <ul>
+          <li><a href="/work" class="animsition-link font-sans-serif font-black" id="color-work" onclick="colorHandler(this)">work</a></li>
+          <li><a href="/about" class="animsition-link font-sans-serif font-black" id="color-about" onclick="colorHandler(this)">about</a></li>
+          <li><a href="/blog" class="animsition-link font-sans-serif font-black current" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <section>
+        <div class="grid-container">
+          <h1 class="font-serif font-black">Blog</h1>
         </div>
-        <div class="nav-container">
-          <div class="animsition-overlay" data-animsition-overlay="true">
-            <ul>
-              <li><a href="../work" class="animsition-link" id="color-work" onclick="colorHandler(this)">work</a></li>
-              <li><a href="../about" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
-              <li><a href="../blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
-              <li><a href="../sayhello" class="animsition-link" id="color-sayhello" onclick="colorHandler(this)">say hello</a></li>
-            </ul>
+      </section>
+
+      <div class="top-container ">
+        <a onclick="toTop()"><img id="button-top" src="../assets/images/backtotop.png"></a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-bar">
+        <div class="footer-content">
+          <h1 class="copyright font-sans-serif font-white">© Wondo Jeong</h1>
+          <div class="sns-wrapper">
+            <a href="https://www.linkedin.com/"><img src="../assets/images/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/"><img src="../assets/images/medium.png" alt="medium"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+            <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img src="../assets/images/email.png" alt="email"></a>
           </div>
         </div>
-      </nav>
-    </header>
-    <div class="main-container">
-      <div class="main-description">
-        <h1>Annyeonghaseyo.</h1>
-        <h2>I'm Wondo, and<br>Welcome to my portfolio.<br>Page: blog</h2>
+        <div class="footer-nav">
+          <a href="/" class="animsition-link font-sans-serif font-white" id="color-home" onclick="colorHandler(this)">HOME</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/work" class="animsition-link font-sans-serif font-white" id="color-work" onclick="colorHandler(this)">WORK</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/about" class="animsition-link font-sans-serif font-white" id="color-about" onclick="colorHandler(this)">ABOUT</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/blog" class="animsition-link font-sans-serif font-white" id="color-blog" onclick="colorHandler(this)">BLOG</a>
+        </div>
       </div>
+    </footer>
+
     </div>
   </body>
 </html>
