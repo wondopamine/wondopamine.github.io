@@ -8,88 +8,109 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/mkk7wpw.css">
     <link rel="stylesheet" href="../css/style_main.css">
+    <link rel="stylesheet" href="../css/style_about.css">
     <link rel="stylesheet" href="../css/animsition.min.css">
     <script src="../js/animsition.min.js"></script>
     <script src="../js/animsition_custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
-    <script src="../js/scrollify_custom.js"></script>
-    <style media="screen">.animsition-overlay-slide {background-color: #cbb0ab;}</style>
+    <style media="screen">.animsition-overlay-slide {background-color: #FAF7F2;}</style>
+    <script src="../js/to_top.js"></script>
   </head>
   <body class="page-about">
+    <div
+    class="animsition-overlay"
+    data-animsition-overlay="true"
+    data-animsition-in-class="overlay-slide-in-top"
+    data-animsition-in-duration="1500"
+    data-animsition-out-class="overlay-slide-out-bottom"
+    data-animsition-out-duration="1500"
+    >
+
     <header>
-      <nav>
-        <div class="animsition-overlay" data-animsition-overlay="true">
-          <a class="nav-logo animsition-link" href="../" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
-            <!-- <img src="assets/images/logo.png" alt="logo" width="auto" height="35"> -->
-        </div>
-        <div class="nav-container">
-          <div class="animsition-overlay" data-animsition-overlay="true">
-            <ul>
-              <li><a href="../work" class="animsition-link" id="color-work" onclick="colorHandler(this)">work</a></li>
-              <li><a href="../about" class="animsition-link" id="color-about" onclick="colorHandler(this)">about</a></li>
-              <li><a href="../blog" class="animsition-link" id="color-blog" onclick="colorHandler(this)">blog</a></li>
-              <li><a href="../sayhello" class="animsition-link" id="color-sayhello" onclick="colorHandler(this)">say hello</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="nav-bar">
+        <a class="logo animsition-link font-serif font-black" href="/" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
+        <ul>
+          <li><a href="/work" class="animsition-link font-sans-serif font-black" id="color-work" onclick="colorHandler(this)">work</a></li>
+          <li><a href="/about" class="animsition-link font-sans-serif font-black current" id="color-about" onclick="colorHandler(this)">about</a></li>
+          <li><a href="/blog" class="animsition-link font-sans-serif font-black" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+        </ul>
+      </div>
     </header>
-    <div class="main-container-scrollify">
-      <section class="panel-home" data-section-name="home">
-        <div class="main-container">
-          <div class="main-description">
-            <div class="main-description-intro">
-              <h1>Annyeonghaseyo.</h1>
-              <!-- <h1 data-splitting id="splitting">Annyeonghaseyo.</h1> -->
-              <h2>I'm Wondo, and<br>Nice to e-meet you!</h2>
-            </div>
-            <div class="main-description-chat">
-              <ul>
-                <li class="chat-visitor"><p>Annyeo... Hey, tell me more?</p></li>
-                <li class="chat-wondo"><p>Sure. I’m an interaction designer at Fjord Singapore who zooms in and out between pixels to experience maps.</p>
-                  <p>And this is my digital space where you could picture me three-dimensionally through <a href="#">my Learnings/POVs</a> in design,
-                  <a href="#">career journey</a> with meaning and purpose, and <a href="#">interests</a>.</p></li>
-                <li class="chat-visitor"><p>Ok... tic toc tic toc.</p></li>
-                <li class="chat-wondo"><p>(!!) I hear you. Could you slide up one more time?<br>Or <a href="#">dive into works</a>!</p></li>
-              </ul>
-            </div>
-          </div>
+
+    <main>
+
+      <section class="section-1">
+        <div class="grid-container">
+          <h1 class="font-serif font-black">Annyeonghaseyo, I'm Wondo.</h1>
+          <h2 class="font-sans-serif font-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+          <img src="../assets/images/about_1.png" alt="about-1">
+          <p class="font-sans-serif font-black">
+            Wondo Jeong is a freelance UX designer specialized in digital and tangible interface design.
+          </p>
+          <p class="font-sans-serif font-black">
+            Most recently, he graduated Design Practice and Research Lab at UNIST, specializing in interaction design and engineering
+            to seek the most proper design questions to vivid design solutions.
+          </p>
+          <p class="font-sans-serif font-black">
+            He previously delivered works ranged from mobile app to IoT products for companies from various industries such as
+            IKEA, Hyundai Motor Company, LG, L’Oreal and Azimut Yacht as an interaction designer in Italy and South Korea.
+          </p>
+          <p class="font-sans-serif font-black">
+            Recently, he has been nominated and achieved design awards across A’, iF and red-dot design award and has shown
+            his academic works at DIS (ACM SIGCHI) 2019 the international HCI conference, IASDR 2019 the design research
+            conference and HCI 2020. He exhibited his design works at Design Korea, Seoul Design Festival, KSDS international
+            invitational design exhibition, and shown his interactive art installation in International Arts Education Week.
+            He has run the alternative design and art gallery in his hometown, Ulsan at an earlier time.
+          </p>
         </div>
       </section>
-      <section class="panel-p1" data-section-name="p1">
-        <div class="project-description">
-          <div class="project-title">
-            <h3>Telco Rejuvenation</h3>
-            <p>2021</p>
-            <p>Interaction Design</p>
-            <hr>
-            <h4>Interaction model · Upsell/Cross-sell</h4>
-          </div>
+
+      <section class="section-2">
+        <div class="grid-container">
+          <img src="../assets/images/about_2.png" alt="about-2">
+          <h1 class="font-serif font-black">Wonder why, connect dots, zoom in and out, and send.</h1>
+          <p class="font-sans-serif font-black">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </section>
-      <section class="panel-p2" data-section-name="p2">
-        <div class="project-description">
-          <div class="project-title">
-            <h3>Augmenting peer-to-peer interaction in online learning</h3>
-            <p>2020</p>
-            <p>Interaction Design</p>
-            <h4>Tangible Interaction · Post-COVID Education</h4>
+
+      <div class="button-container">
+        <a href="https://drive.google.com/"><img id="button-resume" src="../assets/images/resume.png" alt="resume"></a>
+        <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img id="button-email-me" src="../assets/images/emailme.png" alt="email me"></a>
+      </div>
+
+      <div class="top-container ">
+        <a onclick="toTop()"><img id="button-top" src="../assets/images/backtotop.png"></a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-bar">
+        <div class="footer-content">
+          <h1 class="copyright font-sans-serif font-white">© Wondo Jeong</h1>
+          <div class="sns-wrapper">
+            <a href="https://www.linkedin.com/"><img src="../assets/images/linkedin.png" alt="linkedin"></a>
+            <a href="https://medium.com/"><img src="../assets/images/medium.png" alt="medium"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="instagram"></a>
+            <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img src="../assets/images/email.png" alt="email"></a>
           </div>
         </div>
-      </section>
-      <section class="panel-p3" data-section-name="p3">
-        <div class="project-description">
-          <div class="project-title">
-            <h3>Motivational finance tracking for university students with less stress</h3>
-            <p>2020</p>
-            <p>Service & Interaction Design</p>
-            <h4>Interaction</h4>
-          </div>
+        <div class="footer-nav">
+          <a href="/" class="animsition-link font-sans-serif font-white" id="color-home" onclick="colorHandler(this)">HOME</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/work" class="animsition-link font-sans-serif font-white" id="color-work" onclick="colorHandler(this)">WORK</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/about" class="animsition-link font-sans-serif font-white" id="color-about" onclick="colorHandler(this)">ABOUT</a>
+          <span class="font-sans-serif font-white">/</span>
+          <a href="/blog" class="animsition-link font-sans-serif font-white" id="color-blog" onclick="colorHandler(this)">BLOG</a>
         </div>
-      </section>
-      <section class="panel-contact" data-section-name="contact">
-      </section>
+      </div>
+    </footer>
+
     </div>
-      <!-- <script> Splitting(); </script> -->
   </body>
 </html>
