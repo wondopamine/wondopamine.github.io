@@ -41,8 +41,8 @@ function colorHandler(self) {
   }else if(self.id == "color-work"){
     slide.style.backgroundColor = "black";
   }else if(self.id == "color-about"){
-    slide.style.backgroundColor = "#cbb0ab";
+    slide.style.backgroundColor = "#FAF7F2";
   }else if(self.id == "color-blog"){
-    slide.style.backgroundColor = "#817f95";
+    slide.style.backgroundColor = "#FAF7F2";
   }
 }
