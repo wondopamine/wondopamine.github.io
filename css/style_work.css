@@ -40,7 +40,7 @@ main .project-wrapper-f-o {
   margin-bottom: 2em;
 }
 
-main .project-wrapper-f-o > img {
+main .project-wrapper-f-o  img {
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
@@ -173,7 +173,7 @@ main .project-wrapper-v h3 {
   margin-bottom: 2em;
 }
 
-main .project-wrapper-v > img {
+main .project-wrapper-v img {
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
@@ -196,7 +196,7 @@ main .flex-container-row {
   justify-content: center;
 }
 
-main .project-wrapper-e > img {
+main .project-wrapper-e img {
   object-fit: cover;
   width: 96%;
 }
