@@ -90,7 +90,7 @@ main .scroll-zoom {
   height: 100vh;
   border-style: solid;
   border-color: #FAF7F2;
-  border-width: 6em;  /* scroll-zoom-variables */
+  border-width: 4.25em;  /* scroll-zoom-variables */
   -webkit-transition: border-width .3s ease-in-out;
   transition: border-width .3s ease-in-out;
   overflow: hidden;
@@ -115,10 +115,10 @@ main .project-thumbnail {
 }
 
 main .project-title {
-  margin-left: 6em;  /* scroll-zoom-variables */
+  margin-left: 4.5em;  /* scroll-zoom-variables */
   -webkit-transition: margin-bottom .3s ease-in-out;
   transition: margin-left .3s ease-in-out;
-  padding-left: 4em;  /* scroll-zoom-variables */
+  padding-left: 4.25em;  /* scroll-zoom-variables */
   min-height: 75vh;
   max-width: 55%;
   margin-top: -75vh;
