@@ -90,7 +90,7 @@ main .scroll-zoom {
   height: 100vh;
   border-style: solid;
   border-color: #FAF7F2;
-  border-width: 4.25em; /* 9.25 */
+  border-width: 6em;  /* scroll-zoom-variables */
   -webkit-transition: border-width .3s ease-in-out;
   transition: border-width .3s ease-in-out;
   overflow: hidden;
@@ -115,10 +115,10 @@ main .project-thumbnail {
 }
 
 main .project-title {
-  margin-left: 4.5em; /* 9.5 */
+  margin-left: 6em;  /* scroll-zoom-variables */
   -webkit-transition: margin-bottom .3s ease-in-out;
   transition: margin-left .3s ease-in-out;
-  padding-left: 3.5em;
+  padding-left: 4em;  /* scroll-zoom-variables */
   min-height: 75vh;
   max-width: 55%;
   margin-top: -75vh;
@@ -179,11 +179,11 @@ main .project-title:hover {
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-/* > 1440 { columns: 12, margin: 32px, gutter: 16px } */
+/* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 
 
-/* < 1440 { columns: 12, margin: 32px, gutter: 16px } */
-@media(max-width: 1439px) {
+/* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
+@media(max-width: 1679px) {
   main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
   main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;}
   main .intro-wrapper > h3 {font-size: calc(0.5rem + 0.5vw) !important;}

@@ -178,14 +178,14 @@ footer a, span {
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-/* > 1440 { columns: 12, margin: 32px, gutter: 16px } */
-header .nav-bar {width: 1440px; padding: 0 2rem;}
-main .grid-container {width: 1440px; padding: 0 2rem; grid-gap: 1rem;}
-main .top-container {max-width: 1440px;}
-footer .footer-bar {width: 1440px;}
+/* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
+header .nav-bar {width: 1680px; padding: 0 2rem;}
+main .grid-container {width: 1680px; padding: 0 2rem; grid-gap: 1rem;}
+main .top-container {max-width: 1680px;}
+footer .footer-bar {width: 1680px;}
 
-/* < 1440 { columns: 12, margin: 32px, gutter: 16px } */
-@media(max-width: 1439px){
+/* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
+@media(max-width: 1679px){
   header .nav-bar {width: 100%;}
   main .grid-container {width: 100%;}
   main .top-container {width: 100%;}
