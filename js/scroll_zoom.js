@@ -48,9 +48,9 @@ $(document).ready(function() {
       }
     } else {  // scroll up
       brightnessVal = 100;
-      borderWidthVal = 6;  /* scroll-zoom-variables */
+      borderWidthVal = 4.5;  /* scroll-zoom-variables */
       borderRadiusVal = 30;
-      marginLeftVal = 6;  /* scroll-zoom-variables */
+      marginLeftVal = 4.5;  /* scroll-zoom-variables */
       if(scrollTop < p01Bottom) {
         $('#p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
         $('#p01').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
