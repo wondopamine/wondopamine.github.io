@@ -245,7 +245,7 @@ footer .footer-bar {
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
-/* > 1440 { columns: 12, margin: 32px, gutter: 16px } */
+/* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 main .project-wrapper-f-o:nth-child(odd) {grid-column: 2/7;}
 main .project-wrapper-f-o:nth-child(even) {grid-column: 7/12;}
 main .project-wrapper-f-c {height: 25em; grid-gap: 16px;}
@@ -256,8 +256,8 @@ main .project-wrapper-v:nth-child(odd) {grid-column: 1/6;}
 main .project-wrapper-v:nth-child(even) {grid-column: 6/11; margin-top: 3vw;}
 
 
-/* < 1440 { columns: 12, margin: 32px, gutter: 16px } */
-@media(max-width: 1439px) {
+/* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
+@media(max-width: 1679px) {
 }
 
 /* < 905 { columns: 12, margin: 16px, gutter: 0px } */
