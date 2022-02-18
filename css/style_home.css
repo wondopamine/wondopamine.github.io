@@ -28,21 +28,18 @@ main .intro-wrapper {
 }
 
 main .intro-wrapper > h1 {
-  font-size: 5.8rem;
   font-weight: 800;
   text-align: center;
   margin: 0;
 }
 
 main .intro-wrapper > h2 {
-  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   margin-top: 1em;
 }
 
 main .intro-wrapper > h3 {
-  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   margin-top: 2em;
@@ -50,20 +47,19 @@ main .intro-wrapper > h3 {
 
 main .outro-container {
   grid-column: 1/13;
-  height: calc(100vh - 10em); /* Window Height - Footer Height */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 main .outro-container > p {
-  font-size: 2.1rem;
   text-align: center;
 }
 
 main .outro-container > img {
   object-fit: cover;
-  width: 90%;
+  width: 65%;
+  align-self: center;
 }
 
 
@@ -90,9 +86,6 @@ main .scroll-zoom {
   height: 100vh;
   border-style: solid;
   border-color: #FAF7F2;
-  border-width: 4.25em;  /* scroll-zoom-variables */
-  -webkit-transition: border-width .3s ease-in-out;
-  transition: border-width .3s ease-in-out;
   overflow: hidden;
 }
 
@@ -108,43 +101,29 @@ main .scroll-zoom img, main .scroll-zoom video {
      object-fit: cover;
 }
 
-main .project-thumbnail {
-  border-radius: 30px;
-  -webkit-transition: border-radius .3s ease-in-out;
-  transition: border-radius .3s ease-in-out;
-}
-
 main .project-title {
-  margin-left: 4.5em;  /* scroll-zoom-variables */
-  -webkit-transition: margin-bottom .3s ease-in-out;
-  transition: margin-left .3s ease-in-out;
   padding-left: 4.25em;  /* scroll-zoom-variables */
   min-height: 75vh;
-  max-width: 55%;
   margin-top: -75vh;
 }
 
 main .project-title > h1 {
   margin-top: 40vh;
-  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
 main .project-title > h2 {
-  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1;
 }
 
 main .project-title > h3 {
-  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1;
 }
 
 main .project-title > p {
-  font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.4;
   margin-top: 0;
@@ -169,7 +148,6 @@ main .project-title:hover {
 
 #button-seemore {
   width: auto;
-  height: 2.8em;
   display: block;
   margin: 5em auto;
 }
@@ -180,6 +158,16 @@ main .project-title:hover {
 /*****************************************************/
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
+main .intro-wrapper > h1 {font-size: 5.8rem;}
+main .intro-wrapper > h2 {font-size: 1.5rem;}
+main .intro-wrapper > h3 {font-size: 1rem;}
+main .project-title > h1 {font-size: 1.5rem;}
+main .project-title > h2 {font-size: 1.5rem;}
+main .project-title > h3 {font-size: 1.1rem;}
+main .project-title > p {font-size: 3.2rem;}
+main .outro-container > p {font-size: 2.1rem;}
+#button-seemore {height: 2.8em;}
+main .outro-container {height: calc(100vh - 10em);}
 
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -190,14 +178,34 @@ main .project-title:hover {
   main .project-title > h1 {font-size: calc(0.8rem + 0.8vw) !important;}
   main .project-title > h2 {font-size: calc(0.8rem + 0.8vw) !important;}
   main .project-title > h3 {font-size: calc(0.6rem + 0.6vw) !important;}
-  main .project-title > p {font-size: calc(1.7rem + 1.7vw) !important;}
+  main .project-title > p {font-size: calc(1rem + 2vw) !important;}
   main .outro-container > p {font-size: calc(1.1rem + 1.1vw) !important;}
 }
-
-/* < 905 { columns: 12, margin: 16px, gutter: 0px } */
-@media(max-width: 904px){
+@media(min-width: 600px) {
+  main .scroll-zoom {
+    border-width: 4.25em;  /* scroll-zoom-variables */
+    -webkit-transition: border-width .3s ease-in-out;
+    transition: border-width .3s ease-in-out;
+  }
+  main .project-thumbnail {
+    border-radius: 30px;
+    -webkit-transition: border-radius .3s ease-in-out;
+    transition: border-radius .3s ease-in-out;
+  }
+  main .project-title {
+    max-width: 55%;
+    margin-left: 4.5em;  /* scroll-zoom-variables */
+    -webkit-transition: margin-left .3s ease-in-out;
+    transition: margin-left .3s ease-in-out;
+  }
 }
 
-/* < 599 { columns: 12, margin: 16px, gutter: 0px } */
+/* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
+  main .scroll-zoom {border-width: 0;}
+  main .project-thumbnail {border-radius: 0}
+  main .project-title {max-width: 80%; margin-left: 0;}
+  #button-seemore {height: 1.8em;}
+  main .outro-container {height: calc(70vh - 10em);}
+  main .outro-container > img {width: 100%;}
 }
