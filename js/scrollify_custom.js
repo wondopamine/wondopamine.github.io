@@ -4,6 +4,7 @@ $(function() {
     overflowScroll: true,
     interstitialSection: ".footer-bar",
     setHeights: true,
+    scrollSpeed: 600,
   });
 });
 
