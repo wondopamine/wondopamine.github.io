@@ -30,7 +30,6 @@ $(document).ready(function() {
       borderRadiusVal = 0;
       marginLeftVal = 0;
       if(scrollTop >= p01Top) {
-        console.log(brightnessVal);
         $('#p01Thumbnail').css('filter', 'brightness('+ brightnessVal +'%)');
         $('#p01').children().children().children('.scroll-zoom').css('border-width', borderWidthVal+'em');
         $('#p01Thumbnail').css('border-radius', borderRadiusVal+'px');
