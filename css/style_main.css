@@ -79,7 +79,6 @@ header ul {
 }
 
 header li {
-  padding-left: 5em;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -105,17 +104,14 @@ main .button-container {
 
 main .top-container {
   position: sticky;
-  height: 3em;
   bottom: 0;
   z-index: 1;
   margin: auto;
   display: flex;
-  padding: 0 2rem;
   justify-content: flex-end;
 }
 
 #button-top {
-  height: 3em;
   width: auto;
   cursor: pointer;
 }
@@ -134,10 +130,7 @@ footer {
 footer .footer-bar {
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: inherit;
-  padding: 0 2rem;
 }
 
 footer .footer-content {
@@ -179,10 +172,12 @@ footer a, span {
 /*****************************************************/
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
-header .nav-bar {width: 1680px; padding: 0 2rem;}
+header .nav-bar {width: 1680px; padding: 0 2em;}
+header li {padding-left: 5em;}
 main .grid-container {width: 1680px; padding: 0 2rem; grid-gap: 1rem;}
-main .top-container {max-width: 1680px;}
-footer .footer-bar {width: 1680px;}
+main .top-container {max-width: 1680px; padding: 0 2rem; height: 3em;}
+#button-top {height: 3em;}
+footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-content: space-between; align-items: center;}
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px){
@@ -192,14 +187,14 @@ footer .footer-bar {width: 1680px;}
   footer .footer-bar {width:100%;}
 }
 
-/* < 905 { columns: 12, margin: 16px, gutter: 0px } */
-@media(max-width: 904px){
-}
-
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px){
-  header.nav-bar {width: 100%; padding: 0 1rem;}
+  header .nav-bar {width: 100%; padding: 0 1em;}
+  header li {padding-left: 2.5em;}
   main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
+  main .top-container {padding: 0 1rem; height: 2em;}
+  #button-top {height: 2em;}
+  footer .footer-bar {padding: 1em 1em; flex-direction: column-reverse; justify-content: space-around; align-items: flex-start;}
 }
 
 
