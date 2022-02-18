@@ -203,6 +203,7 @@ main .outro-container {height: calc(100vh - 10em);}
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
   main .scroll-zoom {border-width: 0;}
+  main .project-wrapper {margin: 0 -1em;}
   main .project-thumbnail {border-radius: 0}
   main .project-title {max-width: 80%; margin-left: 0;}
   #button-seemore {height: 1.8em;}
