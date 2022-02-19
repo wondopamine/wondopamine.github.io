@@ -181,6 +181,7 @@ main .outro-container {height: calc(100vh - 10em);}
   main .project-title > p {font-size: calc(1rem + 2vw) !important;}
   main .outro-container > p {font-size: calc(1.1rem + 1.1vw) !important;}
 }
+
 @media(min-width: 600px) {
   main .scroll-zoom {
     border-width: 4.25em;  /* scroll-zoom-variables */
@@ -202,11 +203,27 @@ main .outro-container {height: calc(100vh - 10em);}
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
-  main .scroll-zoom {border-width: 0;}
   main .project-wrapper {margin: 0 -1em;}
-  main .project-thumbnail {border-radius: 0}
-  main .project-title {max-width: 80%; margin-left: 0;}
   #button-seemore {height: 1.8em;}
   main .outro-container {height: calc(70vh - 10em);}
   main .outro-container > img {width: 100%;}
+}
+
+@media(max-width: 600px) {
+  main .scroll-zoom {
+    border-width: 0;  /* scroll-zoom-variables */
+    -webkit-transition: border-width .3s ease-in-out;
+    transition: border-width .3s ease-in-out;
+  }
+  main .project-thumbnail {
+    border-radius: 0;
+    -webkit-transition: border-radius .3s ease-in-out;
+    transition: border-radius .3s ease-in-out;
+  }
+  main .project-title {
+    max-width: 80%;
+    margin-left: 0;  /* scroll-zoom-variables */
+    -webkit-transition: margin-left .3s ease-in-out;
+    transition: margin-left .3s ease-in-out;
+  }
 }
