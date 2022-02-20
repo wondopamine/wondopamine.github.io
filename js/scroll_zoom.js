@@ -1,7 +1,6 @@
 $(document).ready(function() {
   let lastScrollTop = 0;
   $(window).resize(function() {
-    $(this).scrollTop(0);
     if($(this).width() >= 600) {
       $('.project-section').find('.project-thumbnail').css('border-radius', 30 +'px');
       $('.project-section').find('.scroll-zoom').css('border-width', 4.25 +'em');  /* scroll-zoom-variables */
