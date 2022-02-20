@@ -103,6 +103,7 @@ main .button-container {
 }
 
 main .top-container {
+  height: 3em;
   position: sticky;
   bottom: 0;
   z-index: 1;
@@ -112,6 +113,7 @@ main .top-container {
 }
 
 #button-top {
+  height: 3em;
   width: auto;
   cursor: pointer;
 }
@@ -175,8 +177,7 @@ footer a, span {
 header .nav-bar {width: 1680px; padding: 0 2em;}
 header li {padding-left: 5em;}
 main .grid-container {width: 1680px; padding: 0 2rem; grid-gap: 1rem;}
-main .top-container {max-width: 1680px; padding: 0 2rem; height: 3em;}
-#button-top {height: 3em;}
+main .top-container {max-width: 1680px; padding: 0 2rem;}
 footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-content: space-between; align-items: center;}
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -192,8 +193,7 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
   header .nav-bar {width: 100%; padding: 0 1em;}
   header li {padding-left: 2.5em;}
   main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
-  main .top-container {padding: 0 1rem; height: 2em;}
-  #button-top {height: 2em;}
+  main .top-container {padding: 0 1rem;}
   footer .footer-bar {padding: 1em 1em; flex-direction: column-reverse; justify-content: space-around; align-items: flex-start;}
 }
 
