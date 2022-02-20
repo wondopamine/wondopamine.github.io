@@ -199,4 +199,15 @@ main .outro-container {height: calc(100vh - 10em);}
   #button-seemore {height: 1.8em;}
   main .outro-container {height: calc(70vh - 10em);}
   main .outro-container > img {width: 100%;}
+  main .scroll-zoom {
+    border-width: 0;  /* scroll-zoom-variables */
+  }
+  main .project-title {
+    max-width: 80%;
+    padding-left: 2em;
+    margin-left: 0;  /* scroll-zoom-variables */
+  }
+  main .project-thumbnail {
+    border-radius: 0;
+  }
 }
