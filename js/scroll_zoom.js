@@ -2,9 +2,11 @@ $(document).ready(function() {
   let lastScrollTop = 0;
   $(window).scroll(function() {
     const scrollTop = $(this).scrollTop();
+    const windowHeight = $(window).height();
+    const windowWidth = $(window).height();
     $('.project-section').each(function(index, item) {
       const projectTop = $(this).offset().top;
-      const projectBottom = projectTop + ($(window).height() * 1/2);
+      const projectBottom = projectTop + (windowHeight * 1/2);
       if (scrollTop > lastScrollTop) {    // SCROLL DOWN
         if(scrollTop > projectTop) {
           $(this).find('.project-thumbnail').css('filter', 'brightness('+ 50 +'%)');
