@@ -112,6 +112,7 @@ main .project-thumbnail {
 main .project-title {
   min-height: 75vh;
   margin-top: -75vh;
+  margin-bottom: 50vh;
   max-width: 55%;
   padding-left: 4.25em;
   margin-left: 4.25em;  /* scroll-zoom-variables */
@@ -139,17 +140,27 @@ main .project-title > p {
   font-weight: 500;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 50vh;
+  margin-bottom: 1em;
+}
+
+main .project-title > span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  border: #FAF7F2 solid 2px;
+  border-radius: 25px;
+  padding: 0.5em 0.8em;
+  background-color: transparent;
+  transition: background-color .5s;
 }
 
 main .project-wrapper a {
   text-decoration: none;
 }
 
-main .project-title:hover {
-  text-decoration: underline;
-  color: #FAF7F2;
-  /* text-underline-position: under; */
+main .project-title > span:hover {
+  background-color: #FAF7F2;
+  color: black;
 }
 
 
