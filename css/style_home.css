@@ -170,6 +170,7 @@ main .project-title > span:hover {
 /*****************************************************/
 
 #button-seemore {
+  height: 2.8em;
   width: auto;
   display: block;
   margin: 5em auto;
@@ -188,7 +189,6 @@ main .project-title > h1 {font-size: 1.5rem;}
 main .project-title > h2 {font-size: 1.5rem;}
 main .project-title > h3 {font-size: 1.1rem;}
 main .project-title > p {font-size: 3.2rem;}
-#button-seemore {height: 2.8em;}
 main .outro-container > p {font-size: 2.1rem;}
 main .outro-container {height: calc(100vh - 10em);}
 
@@ -207,7 +207,6 @@ main .outro-container {height: calc(100vh - 10em);}
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
   main .project-wrapper {margin: 0 -1em;}
-  #button-seemore {height: 1.8em;}
   main .outro-container {height: calc(70vh - 10em);}
   main .outro-container > img {width: 100%;}
   main .scroll-zoom {border-width: 0;}  /* scroll-zoom-variables */
