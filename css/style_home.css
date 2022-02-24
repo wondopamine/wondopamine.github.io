@@ -68,10 +68,6 @@ main .outro-container > img {
 /* SCROLL-ZOOM ***************************************/
 /*****************************************************/
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 main .project-wrapper {
   grid-column: 1/13;
   margin: 0 -2em;
