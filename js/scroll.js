@@ -1,21 +1,3 @@
-$(function() {
-  $.scrollify({
-    section : "section",
-    overflowScroll: true,
-    interstitialSection: ".footer-bar",
-    setHeights: true,
-    scrollSpeed: 600,
-  });
-});
-
-function scrollifyTop() {
-  $.scrollify.move("#featured");
-}
-
-$(document).ready(function() {
-  $.scrollify.update();
-});
-
 $(document).scroll(function () {
    $('section').each(function () {
        if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
