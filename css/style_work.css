@@ -10,7 +10,6 @@ body {
 /*****************************************************/
 
 header {
-  z-index: 1;
   background-color: black;
   -webkit-transition: background-color .15s ease-in-out;
   transition: background-color .3s ease-in-out;
