@@ -24,6 +24,11 @@ main .flex-container {
   align-items: center;
 }
 
+main .flex-container-row {
+  display: flex;
+  align-items: center;
+}
+
 main .intro-wrapper {
   background-color: #FAF7F2;
   padding-bottom: 14em;
@@ -72,6 +77,11 @@ main .intro-case {  /* h5 */
   margin: 10em 0 0 0;
 }
 
+main .intro-type {  /* h6 */
+  grid-column: 10/12;
+  margin: 11em 0 0 0;
+}
+
 main .intro-title { /* h1 */
   grid-column: 2/8;
   margin: 0;
@@ -105,23 +115,38 @@ main .main-image {
   border-radius: 20px;
 }
 
-main .summary-title, .approach-title {
-  grid-column: 3/6;
-  margin: 1em 0 0.5em 0;
+main .summary-title, .approach-title {  /* h2 */
+  grid-column: 6/8;
+  margin: 0 0 0.5em 0;
+  justify-self: center;
+}
+
+main hr {
+  grid-column: 6/8;
+  justify-self: center;
+  border: 2px solid #EA3E53 ;
+  width: 11em;
+  margin: 4em 0 0.5em 0;
 }
 
 main .summary-description {
   grid-column: 3/11;
   margin: 0.5em 0;
+  text-align: center;
+  line-height: 1.2;
 }
 
 main .challenge-title {
+  font-size: 2.5rem;
+  font-weight:bold;
   margin: 0;
 }
 
 main .challenge-question {
-  width: 47%;
+  width: 70%;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 main .challenge-image {
@@ -154,10 +179,32 @@ main .tldr-image-overlay {
   display: flex;
 }
 
+.image-animation {
+  opacity: 0;
+}
+
 main .tldr-image-fr {
   object-fit: cover;
   width: 90%;
   margin: 0 auto;
+}
+
+main .fyi-container {
+  margin: 8em 10em;
+  padding: 3em;
+  background-color: #25292E;
+  border-radius: 2em;
+}
+
+.fyi-container span {
+  font-size: 2rem;
+  letter-spacing: 0;
+  margin-right: 1em;
+}
+
+.fyi-container h5 {
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 /* RESPONSIVE SIZE ***********************************/
