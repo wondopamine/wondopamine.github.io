@@ -34,16 +34,20 @@ main .intro-wrapper > h1 {
 }
 
 @font-face {
-	font-family: "IBM Plex Sans Roman";
-	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+	font-family: "Crimson Pro";
+	src: url("../assets/font/CrimsonPro-Roman-VF.ttf");
 }
 
 main .intro-wrapper > h2 {
-  font-family: "IBM Plex Sans Roman", Times;
+  font-family: "Crimson Pro", serif;
   font-variation-settings: 'wght' 100, 'wdth' 85;
   font-weight: 100;
   text-align: center;
   margin-top: 1em;
+}
+
+main .intro-wrapper > h2 span{
+  font-size: 3rem;
 }
 
 main .intro-wrapper > h2 .char {
@@ -59,13 +63,16 @@ main .intro-wrapper > h2:hover span {
 @keyframes breathe {
   0% {
 		font-variation-settings: 'wght' 100, 'wdth' 85;
+    font-size: 3rem;
 	}
   60% {
 		font-variation-settings: 'wght' 700, 'wdth' 100;
+    font-size: 3rem;
 	}
 	
 	100% {
 		font-variation-settings: 'wght' 100, 'wdth' 85;
+    font-size: 3rem;
 	}
 }
 
@@ -209,7 +216,7 @@ main .project-title > span:hover {
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 main .intro-wrapper > h1 {font-size: 5.8rem;}
-main .intro-wrapper > h2 {font-size: 1.5rem;}
+/* main .intro-wrapper > h2 {font-size: 1.5rem;} */
 main .intro-wrapper > h3 {font-size: 1rem;}
 main .project-title > h1 {font-size: 1.5rem;}
 main .project-title > h2 {font-size: 1.5rem;}
@@ -221,7 +228,7 @@ main .outro-container {height: calc(100vh - 10em);}
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px) {
   main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
-  main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;}
+  /* main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;} */
   main .intro-wrapper > h3 {font-size: calc(0.5rem + 0.5vw) !important;}
   main .project-title > h1 {font-size: calc(0.8rem + 0.8vw) !important;}
   main .project-title > h2 {font-size: calc(0.8rem + 0.8vw) !important;}
