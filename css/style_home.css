@@ -33,10 +33,40 @@ main .intro-wrapper > h1 {
   margin: 0;
 }
 
+@font-face {
+	font-family: "IBM Plex Sans Roman";
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+}
+
 main .intro-wrapper > h2 {
-  font-weight: 400;
+  font-family: "IBM Plex Sans Roman", Times;
+  font-variation-settings: 'wght' 100, 'wdth' 85;
+  font-weight: 100;
   text-align: center;
   margin-top: 1em;
+}
+
+main .intro-wrapper > h2 .char {
+  --delay: calc((var(--char-index) + 1) * 400ms);
+  animation: breathe 4000ms infinite both;
+	animation-delay: var(--delay);
+}
+
+main .intro-wrapper > h2:hover span {
+	animation-play-state: paused;
+}
+
+@keyframes breathe {
+  0% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+	}
+  60% {
+		font-variation-settings: 'wght' 700, 'wdth' 100;
+	}
+	
+	100% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+	}
 }
 
 main .intro-wrapper > h3 {
