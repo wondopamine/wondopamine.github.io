@@ -28,7 +28,7 @@ main .intro-wrapper {
 }
 
 main .intro-wrapper > h1 {
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   margin: 0;
 }
@@ -40,14 +40,11 @@ main .intro-wrapper > h1 {
 
 main .intro-wrapper > h2 {
   font-family: "Crimson Pro", serif;
-  font-variation-settings: 'wght' 100, 'wdth' 85;
-  font-weight: 100;
+  font-variation-settings: 'wght' 300, 'wdth' 50;
+  font-weight: 300;
+  letter-spacing: 0;
   text-align: center;
   margin-top: 1em;
-}
-
-main .intro-wrapper > h2 span{
-  font-size: 3rem;
 }
 
 main .intro-wrapper > h2 .char {
@@ -56,30 +53,27 @@ main .intro-wrapper > h2 .char {
 	animation-delay: var(--delay);
 }
 
-main .intro-wrapper > h2:hover span {
+/* main .intro-wrapper > h2:hover span {
 	animation-play-state: paused;
-}
+} */
 
 @keyframes breathe {
   0% {
-		font-variation-settings: 'wght' 100, 'wdth' 85;
-    font-size: 3rem;
+		font-variation-settings: 'wght' 700, 'wdth' 50;
 	}
-  60% {
-		font-variation-settings: 'wght' 700, 'wdth' 100;
-    font-size: 3rem;
+  50% {
+		font-variation-settings: 'wght' 300, 'wdth' 50;
 	}
 	
 	100% {
-		font-variation-settings: 'wght' 100, 'wdth' 85;
-    font-size: 3rem;
+		font-variation-settings: 'wght' 700, 'wdth' 50;
 	}
 }
 
 main .intro-wrapper > h3 {
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 main .outro-container {
@@ -216,6 +210,7 @@ main .project-title > span:hover {
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 main .intro-wrapper > h1 {font-size: 5.8rem;}
+main .intro-wrapper > h2 span{font-size: 2.8rem; letter-spacing: 0;}
 /* main .intro-wrapper > h2 {font-size: 1.5rem;} */
 main .intro-wrapper > h3 {font-size: 1rem;}
 main .project-title > h1 {font-size: 1.5rem;}
@@ -228,6 +223,7 @@ main .outro-container {height: calc(100vh - 10em);}
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px) {
   main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
+  main .intro-wrapper > h2 span{font-size: calc(1.4rem + 1.4vw);}
   /* main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;} */
   main .intro-wrapper > h3 {font-size: calc(0.5rem + 0.5vw) !important;}
   main .project-title > h1 {font-size: calc(0.8rem + 0.8vw) !important;}
@@ -239,6 +235,7 @@ main .outro-container {height: calc(100vh - 10em);}
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
+  main .intro-wrapper > h2 span{font-size: 1.2rem;}
   main .project-wrapper {margin: 0 -1em;}
   main .outro-container {height: calc(70vh - 10em);}
   main .outro-container > img {width: 100%;}
