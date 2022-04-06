@@ -2,8 +2,8 @@ $(document).ready(function() {
   $(".animsition-overlay").animsition({
     inClass: 'overlay-slide-in-top',
     outClass: 'overlay-slide-out-bottom',
-    inDuration: 1500,
-    outDuration: 1500,
+    inDuration: 500,
+    outDuration: 500,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -11,7 +11,7 @@ $(document).ready(function() {
     loadingClass: 'animsition-loading',
     loadingInner: '', // e.g '<img src="loading.svg" />'
     timeout: false,
-    timeoutCountdown: 5000,
+    timeoutCountdown: 3000,
     onLoadEvent: true,
     browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
@@ -34,7 +34,7 @@ function colorHandler(self) {
   const slide = document.querySelector(".animsition-overlay-slide");
 
   // slide.style.transitionDelay = ".5s";
-  slide.style.transitionDuration = "1.5s";
+  slide.style.transitionDuration = "1s";
 
   if(self.id == "color-home"){
     slide.style.backgroundColor = "#FAF7F2";
@@ -43,7 +43,7 @@ function colorHandler(self) {
   } else if(self.id == "color-about"){
     slide.style.backgroundColor = "#FAF7F2";
   } else if(self.id == "color-blog"){
-    slide.style.backgroundColor = "#FAF7F2";
+    slide.style.backgroundColor = "#FFFFFF";
   } else if(self.id == "color-casestudy"){
     slide.style.backgroundColor = "#FAF7F2";
   }
