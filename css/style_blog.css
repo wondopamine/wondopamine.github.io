@@ -27,11 +27,11 @@ main .grid-container {
   row-gap: 0;
 }
 
-main h1 {
+main .intro-wrapper > h1 {
+  grid-column: 2/8;
   font-weight: 800;
   line-height: 1;
-  grid-column: 2/4;
-  margin: 3em 0 2em 0;
+  text-align: left;
 }
 
 main .post-container-top {
@@ -120,6 +120,20 @@ footer .footer-bar, img {
 
 
 
+/* RESPONSIVE SIZE ***********************************/
+/*****************************************************/
 
+/* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
+main .intro-wrapper > h1 {font-size: 6.8rem; margin: 1.5em 0 1.5em 0;}
 main h1 {font-size: 3.9rem;}
 main .post-category {font-size: 1rem;}
+
+/* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
+@media(max-width: 1679px) {
+  main .intro-wrapper > h1 {font-size: calc(2.5rem + 4vw);}
+}
+
+/* < 600 { columns: 12, margin: 16px, gutter: 0px } */
+@media(max-width: 599px) {
+  main .intro-wrapper > h1 {margin: 4em 0 2em 0;}
+}
