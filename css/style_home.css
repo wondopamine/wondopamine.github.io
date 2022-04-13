@@ -33,7 +33,13 @@ main .intro-wrapper > h1 {
   margin: 0;
 }
 
-@font-face {
+main .intro-wrapper > h2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+/* @font-face {
 	font-family: "Crimson Pro";
 	src: url("../assets/font/CrimsonPro-Roman-VF.ttf");
 }
@@ -53,9 +59,9 @@ main .intro-wrapper > h2 .char {
 	animation-delay: var(--delay);
 }
 
-/* main .intro-wrapper > h2:hover span {
+main .intro-wrapper > h2:hover span {
 	animation-play-state: paused;
-} */
+}
 
 @keyframes breathe {
   0% {
@@ -68,7 +74,7 @@ main .intro-wrapper > h2 .char {
 	100% {
 		font-variation-settings: 'wght' 100, 'wdth' 85;
 	}
-}
+} */
 
 main .intro-wrapper > h3 {
   font-weight: 600;
@@ -209,10 +215,10 @@ main .project-title > span:hover {
 /*****************************************************/
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
-main .intro-wrapper > h1 {font-size: 5.8rem;}
-main .intro-wrapper > h2 span{font-size: 2.8rem; letter-spacing: 0;}
-/* main .intro-wrapper > h2 {font-size: 1.5rem;} */
-main .intro-wrapper > h3 {font-size: 1rem;}
+main .intro-wrapper > h1 {font-size: 6.2rem;}
+/* main .intro-wrapper > h2 span{font-size: 2.8rem; letter-spacing: 0;} */
+main .intro-wrapper > h2 {font-size: 3rem;}
+main .intro-wrapper > h3 {font-size: 1.3rem;}
 main .project-title > h1 {font-size: 1.5rem;}
 main .project-title > h2 {font-size: 1.5rem;}
 main .project-title > h3 {font-size: 1.1rem;}
@@ -222,10 +228,10 @@ main .outro-container {height: calc(100vh - 10em);}
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px) {
-  main .intro-wrapper > h1 {font-size: calc(3rem + 3vw) !important;}
-  main .intro-wrapper > h2 span{font-size: calc(1.4rem + 1.4vw);}
-  /* main .intro-wrapper > h2 {font-size: calc(0.8rem + 0.7vw) !important;} */
-  main .intro-wrapper > h3 {font-size: calc(0.5rem + 0.5vw) !important;}
+  main .intro-wrapper > h1 {font-size: calc(3rem + 3vw);}
+  /* main .intro-wrapper > h2 span{font-size: calc(1.4rem + 1.4vw);} */
+  main .intro-wrapper > h2 {font-size: calc(1.4rem + 1.5vw);}
+  main .intro-wrapper > h3 {font-size: calc(0.6rem + 0.6vw);}
   main .project-title > h1 {font-size: calc(0.8rem + 0.8vw) !important;}
   main .project-title > h2 {font-size: calc(0.8rem + 0.8vw) !important;}
   main .project-title > h3 {font-size: calc(0.6rem + 0.6vw) !important;}
@@ -235,6 +241,9 @@ main .outro-container {height: calc(100vh - 10em);}
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
+  main .intro-wrapper > h1 {font-size: 2.5rem;}
+  main .intro-wrapper > h2 {font-size: 1.3rem;}
+  main .intro-wrapper > h3 {font-size: 0.8rem;}
   main .intro-wrapper > h2 span{font-size: 1.2rem;}
   main .project-wrapper {margin: 0 -1em;}
   main .outro-container {height: calc(70vh - 10em);}
