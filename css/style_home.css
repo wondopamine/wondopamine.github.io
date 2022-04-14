@@ -196,7 +196,9 @@ main .project-title > span:hover {
   color: black;
 }
 
-
+main .see-more {
+  margin-bottom: 10em;
+}
 
 
 /* BUTTON ********************************************/
