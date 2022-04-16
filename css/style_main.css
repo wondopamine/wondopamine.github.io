@@ -14,7 +14,7 @@
 }
 
 .font-black {
-  color: black;
+  color: #25292E;
 }
 
 .font-white {
@@ -25,26 +25,35 @@
   color: #969DA4;
 }
 
-main h1 {
+h1 {
   font-size: 96px;
 }
 
-main h2 {
+h2 {
   font-size: 60px;
 }
 
-main h3 {
+h3 {
   font-size: 48px;
+  font-weight: 500;
 }
 
-main h4 {
+h4 {
   font-size: 34px;
 }
 
-main h5 {
+h5 {
   font-size: 24px;
   font-weight: 300;
 }
+
+span {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+
 
 /* BODY **********************************************/
 /*****************************************************/
@@ -185,10 +194,8 @@ footer a {
   text-decoration: none;
 }
 
-footer a, span {
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
+footer > a, span {
+  font-size: 1rem;
 }
 
 
@@ -206,46 +213,21 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px){
-  header .nav-bar {width: 100%;}
-  main .grid-container {width: 100%;}
-  main .top-container {width: 100%;}
-  footer .footer-bar {width:100%;}
+  h3 { font-size: calc(24px + 1.4vw); }
+  h5 { font-size: calc(12px + 0.7vw); }
+  header .nav-bar { width: 100%; }
+  main .grid-container { width: 100%; }
+  main .top-container { width: 100%; }
+  footer .footer-bar { width:100%; }
 }
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px){
+  h3 { font-size: 1.8rem; }
+  h5 { font-size: 1.2rem; }
   header .nav-bar {width: 100%; padding: 0 1em;}
   header li {padding-left: 2.5em;}
   main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
   main .top-container {padding: 0 1rem;}
   footer .footer-bar {padding: 1em 1em; flex-direction: column-reverse; justify-content: space-around; align-items: flex-start;}
 }
-
-
-
-/* GRADIENT-ANIMATION ********************************/
-/*****************************************************/
-/* .gradient-animation-text {
-  background: linear-gradient(270deg, #5c678a, #cbb0ab);
-  background-size: 200% 200%;
-  animation: text-gradient 10s ease infinite;
-}
-@keyframes text-gradient {
-  0%{-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-position:0% 50%;}
-  50%{-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-position:100% 50%;}
-  100%{-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-position:0% 50%;}
-} */
-
-/* URL BAR FIX ***************************************/
-/*****************************************************/
-/* html {
-  margin: 0;
-  overflow: hidden;
-  width: 100%;
-}
-body {
-  height: 100%;
-  position: fixed;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-} */
