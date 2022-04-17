@@ -1,9 +1,8 @@
-/* MAIN **********************************************/
+/* FONT **********************************************/
 /*****************************************************/
 
 main h2 {
   text-align: center;
-  margin: 0;
 }
 
 main h5 {
@@ -44,7 +43,7 @@ main .intro-section img {
 
 main h2 {
    max-width: 97%;
-   margin: 0 auto;
+   margin: 1em auto 0 auto;
 }
 
 main .design-section h5 {
