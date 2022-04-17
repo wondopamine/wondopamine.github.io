@@ -22,7 +22,7 @@
 }
 
 .font-gray {
-  color: #969DA4;
+  color: #6B737C;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h6 {
   font-size: 20px;
   letter-spacing: 0px;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 p {
@@ -72,6 +72,11 @@ p {
   font-weight: 300;
 }
 
+ul, ol {
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
 
 
 /* BODY **********************************************/
@@ -245,7 +250,7 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
   h3 { font-size: calc(24px + 1.4vw); }
   h4 { font-size: calc(16px + 0.9vw); }
   h5 { font-size: calc(12px + 0.7vw); }
-  h6 { font-size: calc(10px + 0.5vw); }
+  h6, ul, ol { font-size: calc(10px + 0.5vw); }
   header .nav-bar { width: 100%; }
   main .grid-container { width: 100%; }
   main .top-container { width: 100%; }
@@ -259,7 +264,7 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
   h3 { font-size: 1.8rem; }
   h4 { font-size: 1.4rem; }
   h5 { font-size: 1.2rem; }
-  h6 { font-size: 1rem; }
+  h6, ul, ol { font-size: 1rem; }
   header .nav-bar {width: 100%; padding: 0 1em;}
   header li {padding-left: 2.5em;}
   main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
