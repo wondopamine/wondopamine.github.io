@@ -47,10 +47,6 @@ main h2 {
    margin: 0 auto;
 }
 
-main .intro-section {
-  margin-bottom: 10em;
-}
-
 main .design-section h5 {
   margin-top: 2em;
 }
@@ -78,6 +74,7 @@ main h2 { grid-column: 2/12; }
 main .intro-section h5 { grid-column: 3/11; }
 main .design-section h5 { grid-column: 4/10; }
 main h6 { grid-column: 5/9; }
+main .intro-section { margin-bottom: 10em; }
 main .intro-section img { grid-column: 4/9; }
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -90,5 +87,6 @@ main .intro-section img { grid-column: 4/9; }
   main .intro-section h5 { grid-column: 2/12; }
   main .design-section h5 { grid-column: 2/12; }
   main h6 { grid-column: 2/12; }
+  main .intro-section { margin-bottom: 5em; }
   main .intro-section img { grid-column: 2/12; }
 }

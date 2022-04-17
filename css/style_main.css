@@ -139,18 +139,10 @@ header li {
 /* MAIN **********************************************/
 /*****************************************************/
 
-main .intro-section {
-  margin-top: 10em;
-}
-
 main .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: auto;
-}
-
-main .button-section {
-  margin: 5em 0 20em 0;
 }
 
 main .button-container {
@@ -240,11 +232,14 @@ footer > a, span {
 header .nav-bar {width: 1680px; padding: 0 2em;}
 header li {padding-left: 5em;}
 main .grid-container {width: 1680px; padding: 0 2rem; grid-gap: 1rem;}
+main .intro-section { margin-top: 10em; }
+main .outro-section { margin: 5em 0 20em 0; }
 main .top-container {max-width: 1680px; padding: 0 2rem;}
 footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-content: space-between; align-items: center;}
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px){
+  h1 { font-size: calc(48px + 2.8vw); }
   h2 { font-size: calc(32px + 1.9vw); }
   h3 { font-size: calc(24px + 1.4vw); }
   h5 { font-size: calc(12px + 0.7vw); }
@@ -257,6 +252,7 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px){
+  h1 { font-size: 2.6rem; }
   h2 { font-size: 2.2rem; }
   h3 { font-size: 1.8rem; }
   h5 { font-size: 1.2rem; }
@@ -264,6 +260,8 @@ footer .footer-bar {width: 1680px; padding: 0 2em; flex-direction: row; justify-
   header .nav-bar {width: 100%; padding: 0 1em;}
   header li {padding-left: 2.5em;}
   main .grid-container {width: 100%; padding: 0 1rem; grid-gap: 0;}
+  main .intro-section { margin-top: 7em; }
+  main .outro-section { margin: 5em 0 10em 0; }
   main .top-container {padding: 0 1rem;}
   footer .footer-bar {padding: 1em 1em; flex-direction: column-reverse; justify-content: space-around; align-items: flex-start;}
 }
