@@ -58,9 +58,6 @@ main a {
 main .tag {
     height: 2em;
 }
-main .contents-wrapper {
-    margin-bottom: 10em;
-}
 
 main .image-wrapper {
     margin: 3em 0;
@@ -110,6 +107,7 @@ main .button-email {
 main .post-title { margin-top: 3em; grid-column: 3/11; }
 main .post-title > h2 { max-width: 70%; }
 main .post-contents { grid-column: 3/11; }
+main .contents-wrapper { margin-bottom: 10em; }
 main .image-caption { width: 65%; }
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -123,5 +121,6 @@ main .image-caption { width: 65%; }
     main .post-title > .fyi-block { flex-direction: column; }
     main .fyi-block > h6 { margin-top: 0; }
     main .post-contents { grid-column: 2/12; }
+    main .contents-wrapper { margin-bottom: 2em; }
     main .image-caption { width: 100%; }
 }
