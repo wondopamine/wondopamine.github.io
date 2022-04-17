@@ -132,22 +132,6 @@ main .project-title > span:hover {
 
 
 
-/* SEE-MORE  *****************************************/
-/*****************************************************/
-
-main .see-more {
-  margin-bottom: 20em;
-}
-
-#button-seemore {
-  height: 2.8em;
-  width: auto;
-  display: block;
-  margin: 5em auto;
-}
-
-
-
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
@@ -167,7 +151,7 @@ main .project-title > .project-title-wrapper { max-width: 55%; }
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
   main .intro-wrapper > .intro-sentence-style { font-size: 1.6rem; }
-  main .intro-wrapper > .intro-name-style { font-size: 4rem; }
+  main .intro-wrapper > .intro-name-style { font-size: 2.8rem; }
   main .project-wrapper {margin: 0 -1em;}
   main .scroll-zoom {border-width: 0;}  /* scroll-zoom-variables */
   main .project-title {max-width: 90%; padding-left: 2em; margin-left: 0;}  /* scroll-zoom-variables */
