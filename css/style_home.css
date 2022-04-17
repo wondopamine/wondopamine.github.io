@@ -1,3 +1,36 @@
+/* FONT **********************************************/
+/*****************************************************/
+
+main .intro-wrapper > .intro-sentence-style {
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
+main .intro-wrapper > .intro-name-style {
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+main .intro-wrapper > .intro-heading-style {
+  margin: 1em 0;
+}
+
+main .project-title-wrapper > .project-title-style {
+  margin: 0.4em 0;
+}
+
+main .project-title > .project-challenge-style {
+  margin: 16em 0 0.8em 0;
+}
+
+main .project-title > .project-description-style {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+
+
 /* BODY BG COLOR *************************************/
 /*****************************************************/
 
@@ -26,17 +59,6 @@ main .intro-wrapper {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 12px 0;
-}
-
-main .intro-wrapper > .intro-sentence-style {
-  font-weight: 500;
-  letter-spacing: -1.5px;
-}
-
-main .intro-wrapper > .intro-name-style {
-  font-weight: 700;
-  letter-spacing: -1.5px;
 }
 
 
@@ -85,24 +107,10 @@ main .project-title {
   min-height: 75vh;
   margin-top: -75vh;
   margin-bottom: 50vh;
-  max-width: 55%;
   padding: 15vh 0 0 4.25em;
   margin-left: 4.25em;  /* scroll-zoom-variables */
   -webkit-transition: margin-left .3s ease-in-out;
   transition: margin-left .3s ease-in-out;
-}
-
-main .project-title > .project-title-style {
-  margin: 1em 0;
-}
-
-main .project-title > .project-challenge-style {
-  margin: 16em 0 1em 0;
-}
-
-main .project-title > .project-description-style {
-  margin-top: 0;
-  line-height: 1.6;
 }
 
 main .project-title > .project-button-style {
@@ -146,6 +154,8 @@ main .see-more {
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 main .intro-wrapper > .intro-sentence-style { font-size: 36px; }
 main .intro-wrapper > .intro-name-style { font-size: 110px; }
+main .project-title { max-width: 45%; }
+main .project-title > .project-title-wrapper { max-width: 55%; }
   
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -160,6 +170,7 @@ main .intro-wrapper > .intro-name-style { font-size: 110px; }
   main .intro-wrapper > .intro-name-style { font-size: 4rem; }
   main .project-wrapper {margin: 0 -1em;}
   main .scroll-zoom {border-width: 0;}  /* scroll-zoom-variables */
-  main .project-title {max-width: 80%; padding-left: 2em; margin-left: 0;}  /* scroll-zoom-variables */
+  main .project-title {max-width: 90%; padding-left: 2em; margin-left: 0;}  /* scroll-zoom-variables */
+  main .project-title > .project-title-wrapper { max-width: 90%; }
   main .project-thumbnail {border-radius: 0;}
 }
