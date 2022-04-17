@@ -73,15 +73,19 @@ main .post-wrapper {
   margin: 0 auto;
 }
 
-/* main .post-wrapper > h2, h6 {
+main .post-wrapper > h2, h6 {
   color: #25292E;
   -webkit-transition: color .5s ease-in-out;
   transition: color .5s ease-in-out;
 }
 
-main .post-container:hover .post-wrapper  > h2, h6 {
+main .post-container:hover .post-wrapper > h2 {
   color: #FAF7F2;
-} */
+}
+
+main .post-container:hover .post-wrapper > h6 {
+  color: #FAF7F2;
+}
 
 
 main .post-category {
