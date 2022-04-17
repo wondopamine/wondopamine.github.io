@@ -43,7 +43,6 @@ main .post-container {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 -2em;
   border-bottom: 1px solid #C4C4C4;
 }
 
@@ -111,6 +110,7 @@ main .top-container{
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
 main .post-wrapper { width: 80%; }
+main .post-container { margin: 0 -2em; }
 main .post-thumbnail { margin: 0 -2em; }
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
@@ -119,6 +119,7 @@ main .post-thumbnail { margin: 0 -2em; }
 
 /* < 600 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
-  main .post-wrapper { width: 70%; }
-  main .post-thumbnail { margin: 0 0; }
+  main .post-wrapper { width: 77%; }
+  main .post-container { margin: 0 -1em;}
+  main .post-thumbnail { margin: 0 0; top: 0; left: 0; width: 100%;}
 }
