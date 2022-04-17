@@ -1,0 +1,127 @@
+/* BODY BG COLOR *************************************/
+/*****************************************************/
+body {
+    background-color: #FFFFFF;
+}
+  
+  
+  
+  /* HEADER ********************************************/
+  /*****************************************************/
+  
+header {
+    background-color: #FFFFFF;
+}
+  
+header .nav-bar {
+    box-sizing: border-box;
+}
+
+
+
+/* MAIN **********************************************/
+/*****************************************************/
+
+/* INTRO *********************************************/
+main .post-title > span {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #FAF7F2;
+    padding: 0.5em 1em;
+}
+
+main .post-title > .fyi-block {
+    background-color: #25292E;
+    border-radius: 16px;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+main .fyi-block > h5 {
+    min-width: 10%;
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+main .fyi-block > h6 {
+    max-width: 85%;
+    margin: 1.5 0em
+}
+
+/* CONTENTS *******************************************/
+
+main a {
+    color: #25292E;
+}
+
+main .tag {
+    height: 2em;
+}
+main .contents-wrapper {
+    margin-bottom: 10em;
+}
+
+main .image-wrapper {
+    margin: 3em 0;
+}
+
+main .post-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .image-caption {
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+    display: block;
+    margin: 1.5em auto;
+}
+
+main .center-caption {
+    text-align: center;
+}
+
+main .post-contents h6 {
+    margin: 1em 0;
+}
+
+/* BUTTON ********************************************/
+main .outro-section > h6 {
+    text-align: center;
+}
+
+main .button-linkedin {
+    margin-right: 1em;
+  }
+  
+main .button-email {
+    margin-left: 1em;
+}
+
+
+/* RESPONSIVE SIZE ***********************************/
+/*****************************************************/
+
+/* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
+main .post-title { margin-top: 3em; grid-column: 3/11; }
+main .post-title > h2 { max-width: 70%; }
+main .post-contents { grid-column: 3/11; }
+main .image-caption { width: 65%; }
+
+/* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
+@media(max-width: 1679px) {
+}
+
+/* < 600 { columns: 12, margin: 16px, gutter: 0px } */
+@media(max-width: 599px) {
+    main .post-title { margin-top: 0; grid-column: 2/12; }
+    main .post-title > h2 { max-width: 100%; }
+    main .post-title > .fyi-block { flex-direction: column; }
+    main .fyi-block > h6 { margin-top: 0; }
+    main .post-contents { grid-column: 2/12; }
+    main .image-caption { width: 100%; }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Wondo Jeong</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkk7wpw.css">
+    <link rel="stylesheet" href="../../css/style_main.css">
+    <link rel="stylesheet" href="../../css/style_post.css">
+    <link rel="stylesheet" href="../../css/animsition.min.css">
+    <script src="../../js/animsition.min.js"></script>
+    <script src="../../js/animsition_custom.js"></script>
+    <style media="screen">.animsition-overlay-slide {background-color: #FFFFFF;}</style>
+    <script src="../../js/to_top.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="page-post">
+    <script>AOS.init();</script>
+    <div
+      class="animsition-overlay"
+      data-animsition-overlay="true"
+      data-animsition-in-class="overlay-slide-in-top"
+      data-animsition-in-duration="1000"
+      data-animsition-out-class="overlay-slide-out-bottom"
+      data-animsition-out-duration="1000"
+      >
+
+      <header>
+        <div class="nav-bar">
+          <a class="logo animsition-link font-serif font-black" href="../../" id="color-home" onclick="colorHandler(this)"><b>wondo</b></a>
+          <ul>
+            <li><a href="../../work" class="animsition-link font-sans-serif font-black" id="color-work" onclick="colorHandler(this)">work</a></li>
+            <li><a href="../../about" class="animsition-link font-sans-serif font-black" id="color-about" onclick="colorHandler(this)">about</a></li>
+            <li><a href="../../blog" class="animsition-link font-sans-serif font-black current" id="color-blog" onclick="colorHandler(this)">blog</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+
+        <section class="intro-section">
+          <div class="grid-container">
+            <div class="post-title">
+              <span class="font-sans-serif font-black"><b>Design</b></span>
+              <h2 class="font-serif font-black">Introduction to an interaction model.</h2>
+              <h6 class="font-sans-serif font-black">2022 Apr 14 · 7 min read</h6>
+              <div class="fyi-block">
+                <h5 class="font-serif font-white">fyi</h5>
+                <h6 class="font-sans-serif font-white">
+                  An interaction model is defined in various ways. 
+                  For example, the Microsoft Holo lens team explains the interaction model based on the forms of interaction for HoloLens such as gaze, gesture and voice. 
+                  AWS, on the other hand, introduced Alexa as an interaction model that connects the user and the cloud. 
+                  For now, we'll be focusing on and limiting the definition within digital product and strategy, which make up most of our client needs.
+                </h6>
+              </div>
+              <h6 class="font-sans-serif font-black">
+                As interaction designers, one of our key tasks is to create an interaction model during the project. 
+                The interaction model maps out how users navigate and access objectives, and lets us communicate that to the team, stakeholders, and clients.
+              </h6>
+              <ul class="font-sans-serif font-black">
+                <li><a href="#01"><b>What is an interaction model?</b></a></li>
+                <li><a href="#02"><b>A sample interaction model</b></a></li>
+                <li><a href="#03"><b>In context to information architecture, navigation model, or interaction patterns</b></a></li>
+                <li><a href="#04"><b>Role of user research in creating mental models</b></a></li>
+                <li><a href="#05"><b>Assessing interaction models</b></a></li>
+                <li><a href="#06"><b>A related case study</b></a></li>
+                <li><a href="#07"><b>Readings</b></a></li>
+                <li><a href="#08"><b>Next steps?</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="grid-container">
+            <div class="post-contents">
+
+              <div id="01" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">What is an interaction model?</h3>
+                <h6 class="font-sans-serif font-black">
+                  An interaction model connects what the user already knows and understands from a similar experience (mental model) to features of a product or service, to create a high-level overview of how the user engages in the experience over time.
+                </h5>
+                <div class="image-wrapper">
+                  <img class="post-image" src="../../assets/posts/p03/01.png" data-aos="fade-up">
+                  <span class="image-caption font-sans-serif font-gray">A designer x An interaction Model x A user: How an interaction model bridges between the designer’s conceptual model and user’s mental model</span>
+                </div>
+                <h6 class="font-sans-serif font-black">
+                  Interaction models can be applied to both small and large scales. 
+                  For instance, an interaction model might get into the details of how a user adjusts the settings on a single product, or it might show how the user navigates multiple apps to access various services. 
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  If an interaction model is done well, it provides the user good learnability and predictability and helps them understand how to act and move to the right place to achieve their objectives. 
+                  The other benefit of creating an interaction model as a tool is that it helps designers to communicate how the user research findings are and will be related to the digital product creation. 
+                  It enables designers, developers, stakeholders and/or clients to understand and explain how users navigate from objects to actions within a system.
+                </h6>
+              </div>
+
+              <div id="02" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">A sample interaction model</h3>
+                <h6 class="font-sans-serif font-black">
+                  An interaction model connects what the user already knows and understands from a similar experience (mental model) to features of a product or service, to create a high-level overview of how the user engages in the experience over time.
+                </h6>
+                <div class="image-wrapper">
+                  <img class="post-image" src="../../assets/posts/p03/02.png" data-aos="fade-up">
+                  <span class="image-caption center-caption font-sans-serif font-gray">System 1: the first version of Apple Macintosh OS — Apple, 1984</span>
+                </div>
+                <h6 class="font-sans-serif font-black">
+                  Let's look at one of the most famous interaction models: the desktop metaphor that was introduced through the Apple Macintosh in 1984.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Instead of interacting via esoteric text-based commands as most computers back then, Apple represented everything as items on the visual equivalent of your physical workspace—the desktop. 
+                  You create and open files, which can then be stored in folders, and applications like the calculator looked like their real-world counterpart. You can move and arrange all these elements around as you would things on your actual desktop.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  The model has evolved over time, adding more abstracted user interface elements like the dock, but the core model has remained until now and help users access and navigate the functionalities.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Like the desktop interaction model example, a good interaction model helps the user generate a <a href="#"><b>mental model</b></a> of the product. Mental models are users' underlying expectations about how something should work. 
+                  It's formed based on what they already do, prior experiences with similar products, or assumptions they've made on how it would appear. 
+                </h6>
+                <div class="image-wrapper">
+                  <img class="post-image" src="../../assets/posts/p03/03.png" data-aos="fade-up">
+                  <span class="image-caption font-sans-serif font-gray">Even if most drivers don't know how the engine actually works, they have in mind what the car is capable of doing and how to drive. “Insert car keys, holding a handle, and hit the pedal!”</span>
+                </div>
+                <h6 class="font-sans-serif font-black">
+                  That's why even complicated systems make sense without deeply thinking about how the system actually works. That's why, again, the desktop interaction model helps us use the computer more intuitively because its functions are similar enough to a real desk that people can make a guess on how to use it. 
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Of course, there is no one-size-fits-all interaction model. Every product or project solves different problems and challenges for different users, and thus, requires an interaction model that reflects and supports their real-world interactions as much as possible.
+                </h6>
+              </div>
+
+              <div id="03" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">In context to information architecture, navigation model, or interaction patterns</h3>
+                <div class="image-wrapper">
+                  <img class="post-image" src="../../assets/posts/p03/04.png" data-aos="fade-up">
+                  <span class="image-caption font-sans-serif font-gray">Do you agree with these diagrams explaining the definition of IA, Navi model, and Interaction patterns?</span>
+                </div>
+                <h6 class="font-sans-serif font-black">
+                  An <a href="#"><b>information architecture</b></a> maps the relationships between content. But as we create complex Web portals, apps or systems, we are not just structuring content. 
+                  We are defining the way users move through a system consisting of many complex elements and how they use them to perform various transactions.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  An interaction model is also much more than just a navigation model that describes the path users can move from one page or section of an application to another. 
+                  Of course, an interaction model must take a product’s navigation model into account. 
+                  Certainly, we need to be aware of the relationships between an application’s pages.  
+                  But an interaction model also describes how users navigate to a page. 
+                  Are they just following links that go deeper and deeper into a tree structure? 
+                  Are the sections effectively just screens arranged as vertical or horizontal tabs? 
+                  Or are the sections arranged in a 2d plane, where swiping horizontally moves the user to the next section and swiping vertically elaborates on that section? 
+                  Perhaps the content is interlinked non-linearly like a neural network, using subject tags, and there are many entry and exit points for any given item? 
+                  Or it’s a combination of any of the above?
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Beyond navigation, an interaction model would also describe how they select an object of interest on the page—for example, a book, a passenger, or an expense--and how they act on that object—purchasing it, booking an itinerary for it, or adding it up. 
+                  Are they represented as a list? 
+                  A photo on a grid? A post-it on a kanban? 
+                  How does the user open up the object and configure the details? 
+                  Can they select a bunch and add them to a cart? 
+                  Can they move them to another location?
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  There’s no need to reinvent the wheel every time we consider navigation and interactions, as there are common <a href="#"><b>interaction design patterns</b></a> that users have become familiar with, such as the 2 pane layout (think Outlook--your mail as a list on the left pane, the mail contents on the right), the screen-after-screen drill-down navigation that most mobile apps are based on, a list of items that can be viewed as a list or grid and sorted and/or filtered, or you know even just a linear form. 
+                  Boring, but effective in the sense that the majority of users just know how they work. 
+                  Of course, there might be digital products that require completely novel navigation and interaction. 
+                  Those tend to be fun, and challenging.
+                </h6>
+              </div>
+
+              <div id="04" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">Role of user research in creating mental models</h3>
+                <h6 class="font-sans-serif font-black">
+                  We need to stress the importance of the user research identifying the common patterns of users such as how they conceptualise their goals. 
+                  We mentioned that a good interaction model helps users generate a mental model. 
+                  However, the individual's mental model will constantly evolve and be subject to change. 
+                  It’s affected by various factors like new experiences with new products or new technologies. 
+                  For example, the mental model for driving manual stick cars and driverless cars in near future will be quite different. 
+                  In addition, depending on the goals of an experience, you might adjust your model to reduce (or increase) friction, to encourage interaction, or elicit joy or some other emotional response from the user.
+                </h6>
+                <div class="image-wrapper">
+                  <img class="post-image" src="../../assets/posts/p03/05.png" data-aos="fade-up">
+                  <span class="image-caption center-caption font-sans-serif font-gray">Sweet. You just identified the common patterns in your customers.</span>
+                </div>
+                <h6 class="font-sans-serif font-black">
+                  That’s why user research is the core and fundamental activity to create an interaction model. 
+                  While mental models are unique to each individual, you’ll be able to uncover common patterns in your customers. 
+                  Identifying these at the start of your project will increase your chances of designing a good interaction model:
+                </h6>
+                <ol class="font-sans-serif font-black">
+                  <li>
+                    <b>Metaphors</b>: THIS works like THAT. 
+                    “Your computer works like your desk.” 
+                    With products that have abstract digital behaviour, applying a metaphor can make the product more physical, and thus more understandable. 
+                    A folder is more physical than a directory. 
+                    Clubhouse, an app which has influenced many platforms such as Twitter's Space and Spotify's Greenroom, is designed with an interaction model that is inspired by the stage metaphor. 
+                    Only those who speak or perform can come up to the top of the page, just like climbing up a stage to deliver a performance. 
+                    And you need to have an invitation to become a member too.
+                  </li>
+                  <li>
+                    <b>Structure</b>: Sometimes this is a matter of information hierarchy: arranging content to help users understand and find things they need. 
+                    Apple’s <a href="#"><b>Store page</b></a> is a good example. 
+                    Firstly, it provides thumbnails of hard categories that customers commonly use to explore. 
+                    After that, it uses large size photos for new and featured products to attract customers who may just be browsing. 
+                    Finally, the page uses an even larger image of a staff member to direct customers to guided-one-on-one shopping assistance, if they still can't find what to do or buy.
+                  </li>
+                  <li>
+                    <b>A through-line</b>: A through-line is figuring out the likely pathways through the device. 
+                    A user will do A, then B, then C. 
+                    Any model should work well for that A-B-C pathway. 
+                    Let's imagine the COVID-19 ends soon, and you'll fly next month so that you bought a flight ticket. 
+                    The flight schedule is automatically updated to your calendar app and gives you a notification in advance. 
+                    When you arrived the airport, the app notifies you with a CTA to open the ticket through the wallet app to show to the flight attendance. 
+                    This is one of through-line example.
+                  </li>
+                </ol>
+              </div>
+
+              <div id="05" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">Assessing interaction models</h3>
+                <h6 class="font-sans-serif font-black">
+                  Here are some pointers for you to reflect your model is well-designed:
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  The best interaction models are either nearly invisible. 
+                  Which means, they do not disturb users use the functionality, or else they are extremely pleasing in and of themselves. 
+                  The user is in the "flow" and not at all concerned about accessing and moving in the system.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Consistency creates trust and predictability. 
+                  It gives a feeling of stability thus improving user experience and ease of use.
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  Familiarity. The model that is designed from real-world metaphors will lower the chance to create a certain level of 'cognitive friction' and higher chance to convey affordances, and past interactions for users to resonate quickly. 
+                  The more familiar the users are with interaction, the quicker the adoption will be. 
+                </h6>
+                <h6 class="font-sans-serif font-black">
+                  A good model must adapt with user maturity/user progression(personalisation). 
+                  The progression from novice to expert requires the system to provide adequate interactions.
+                </h6>
+              </div>
+
+              <div id="06" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">A related case study</h3>
+                <a href="#"><h6 class="font-sans-serif font-black"><b>Telco Digital Brand Rejuvenation</b></h6></a>
+              </div>
+              
+              <div id="07" class="tag"></div>
+              <div class="contents-wrapper">
+                <h3 class="font-serif font-black">Readings</h3>
+                <a href="#"><h6 class="font-sans-serif font-black"><b>Mental Models and User Experience Design</b></h6></a>
+                <a href="#"><h6 class="font-sans-serif font-black"><b>Interaction Design Patterns</b></h6></a>
+                <a href="#"><h6 class="font-sans-serif font-black"><b>Defining an Interaction Model: The Cornerstone of Application Design</b></h6></a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="outro-section">
+          <h6><b>Keen to chat more?</b></h6>
+          <div class="button-container">
+            <a href="https://www.linkedin.com/"><img class="button-icon button-linkedin" src="../../assets/images/linkedin.png" alt="resume"></a>
+            <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img class="button-icon button-email" src="../../assets/images/email.png" alt="email me"></a>
+          </div>
+        </section>
+
+        <div class="top-container ">
+          <a onclick="toTop()"><img id="button-top" src="../../assets/images/backtotop.png"></a>
+        </div>
+
+      </main>
+
+      <footer>
+        <div class="footer-bar">
+          <div class="footer-content">
+            <h1 class="copyright font-sans-serif font-white">© Wondo Jeong</h1>
+            <div class="sns-wrapper">
+              <a href="https://www.linkedin.com/"><img src="../../assets/images/linkedin.png" alt="linkedin"></a>
+              <a href="https://medium.com/"><img src="../../assets/images/medium.png" alt="medium"></a>
+              <a href="https://www.instagram.com/"><img src="../../assets/images/instagram.png" alt="instagram"></a>
+              <a href="mailto:wondojeong@gmail.com?subject=Hi!"><img src="../../assets/images/email.png" alt="email"></a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <a href="/" class="animsition-link font-sans-serif font-white" id="color-home" onclick="colorHandler(this)">HOME</a>
+            <span class="font-sans-serif font-white">/</span>
+            <a href="/work" class="animsition-link font-sans-serif font-white" id="color-work" onclick="colorHandler(this)">WORK</a>
+            <span class="font-sans-serif font-white">/</span>
+            <a href="/about" class="animsition-link font-sans-serif font-white" id="color-about" onclick="colorHandler(this)">ABOUT</a>
+            <span class="font-sans-serif font-white">/</span>
+            <a href="/blog" class="animsition-link font-sans-serif font-white" id="color-blog" onclick="colorHandler(this)">BLOG</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

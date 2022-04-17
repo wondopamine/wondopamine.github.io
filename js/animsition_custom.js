@@ -46,5 +46,7 @@ function colorHandler(self) {
     slide.style.backgroundColor = "#FFFFFF";
   } else if(self.id == "color-casestudy"){
     slide.style.backgroundColor = "#FAF7F2";
+  } else if(self.id == "color-post"){
+    slide.style.backgroundColor = "#FFFFFF";
   }
 }
