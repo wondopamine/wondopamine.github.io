@@ -10,101 +10,25 @@ body {
 /*****************************************************/
 
 header {
-  background-color: #FAF7F2;
+  background-color: white;
 }
 
 
 /* MAIN **********************************************/
 /*****************************************************/
 
-main .flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-main .flex-container-row {
-  display: flex;
-  align-items: center;
-}
-
-main .intro-wrapper {
+main .header-section {
   background-color: #FAF7F2;
-  padding-bottom: 14em;
 }
 
-main .summary-wrapper {
-  margin-bottom: 8em;
+main .project-header {
+  grid-column: 2/12;
+  display: flex;
+  justify-content: space-between;
 }
 
-main .challenge-wrapper {
-  background-color: #FAF7F2;
-  padding-top: 6em;
-  margin-bottom: 8em;
-}
-
-main h1 {
-  font-weight: 800;
-  line-height: 1;
-}
-
-main h2 {
-  font-weight: 600;
-  line-height: 1;
-}
-
-main h3 {
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-main h5 {
-  font-weight: 400;
-}
-
-main h6 {
-  font-weight: 600;
-  line-height: 1.6;
-}
-
-main p {
-  margin-top: 0;
-}
-
-main .intro-case {  /* h5 */
-  grid-column: 2/4;
-  margin: 10em 0 0 0;
-}
-
-main .intro-type {  /* h6 */
-  grid-column: 10/12;
-  margin: 11em 0 0 0;
-}
-
-main .intro-title { /* h1 */
-  grid-column: 2/8;
-  margin: 0;
-}
-
-main .intro-role {  /* h6 */
-  grid-column: 10/12;
-  margin: 0;
-}
-
-main .intro-role > span { /* h6 */
-  font-weight: 300;
-  letter-spacing: inherit;
-}
-
-main .intro-keyword { /* h6 */
-  grid-column: 2/8;
-  margin: 2em 0;
-}
-
-main .intro-tasks {  /* h6 */
-  grid-column: 10/12;
-  margin: 0;
+main .project-description > h6 {
+  margin: 1.5em 0;
 }
 
 main .main-image {
@@ -112,128 +36,238 @@ main .main-image {
   object-fit: cover;
   width: 100%;
   margin-top: -8em;
-  border-radius: 20px;
-}
-
-main .summary-title, .approach-title {  /* h2 */
-  grid-column: 6/8;
-  margin: 0 0 0.5em 0;
-  justify-self: center;
 }
 
 main hr {
-  grid-column: 6/8;
-  justify-self: center;
   border: 2px solid #EA3E53 ;
   width: 11em;
-  margin: 4em 0 0.5em 0;
+  margin: 3em auto 0 auto;
 }
 
-main .summary-description {
-  grid-column: 3/11;
-  margin: 0.5em 0;
+main .tldr-wrapper > h3 {
   text-align: center;
-  line-height: 1.2;
+  margin: 0.5em 0 1em 0;
 }
 
-main .challenge-title {
-  font-size: 2.5rem;
-  font-weight:bold;
-  margin: 0;
+main .tldr-wrapper > h5 {
+  text-align: left;
 }
 
-main .challenge-question {
-  width: 70%;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-main .challenge-image {
-  width: 60%;
-}
-
-main .approach-description {
-  grid-column: 3/11;
-}
-
-main .summary-wrapper a {
+main a {
   text-decoration: none;
-  font-weight: 600;
 }
 
 main .tldr-images {
-  grid-column: 2/12;
+  grid-column: 1/13;
   position: relative;
 }
 
-main .tldr-image-bg {
-  object-fit: cover;
+main .tldr-image-back {
   width: 100%;
 }
 
 main .tldr-image-overlay {
   position: absolute;
-  top: 4em;
-  left: 4em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   display: flex;
 }
 
-.image-animation {
+main .image-animation {
   opacity: 0;
 }
 
-main .tldr-image-fr {
+main .tldr-image-front {
   object-fit: cover;
   width: 90%;
   margin: 0 auto;
 }
 
-main .fyi-container {
-  margin: 8em 10em;
-  padding: 3em;
+main .fyi-block {
+  grid-column: 2/12;
   background-color: #25292E;
-  border-radius: 2em;
+  border-radius: 16px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
-.fyi-container span {
-  font-size: 2rem;
-  letter-spacing: 0;
-  margin-right: 1em;
+main .fyi-block > h5 {
+  min-width: 10%;
+  text-align: center;
+  margin: 1.5em 0;
 }
 
-.fyi-container h5 {
-  font-size: 1.1rem;
+main .fyi-block > h6 {
+  max-width: 85%;
+  margin: 1.5 0em
+}
+
+main .challenge-section {
+  background-color: #FAF7F2;
+}
+
+main .challenge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .challenge-title {
   margin: 0;
 }
+
+main .challenge-question {
+  text-align: center;
+}
+
+main .output-container, .output-container-reverse {
+  grid-column: 2/12;
+  margin: 3em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .output-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .output-wrapper > h4 {
+  margin: 0;
+}
+
+main .output-container > img {
+  object-fit: cover;
+}
+
+main .output-container-reverse > img {
+  object-fit: cover;
+}
+
+main .process-section {
+  background: linear-gradient(#FFF4F5, white);
+}
+
+main .process-intro-wrapper {
+  grid-column: 2/12;
+}
+
+main .process-intro-wrapper > h3 {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+main .process-intro-wrapper > span {
+  display: block;
+  text-align: center;
+}
+
+main .process-approach-wrapper {
+  margin-bottom: 3em;
+}
+
+main .process-approach-wrapper > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+main .discover-image {
+  grid-column: 1/13;
+  object-fit: cover;
+  width: 100%;
+}
+
+main .define-wrapper img {
+  display: block;
+  margin: 3em auto;
+  object-fit: cover;
+}
+
+main .image-caption {
+  font-style: italic;
+  display: block;
+  text-align: center;
+}
+
+main .design-section h4 {
+  text-align: center;
+}
+
+main .col-3-11 {
+  grid-column: 3/11;
+}
+
+main .col-1-13 {
+  grid-column: 1/13;
+  text-align: center;
+}
+
+main .design-section img {
+  object-fit: cover;
+  width: 100%;
+}
+
+main .button-container {
+  margin-bottom: 10em;
+}
+
 
 /* RESPONSIVE SIZE ***********************************/
 /*****************************************************/
 
 /* > 1680 { columns: 12, margin: 32px, gutter: 16px } */
-main h1 {font-size: 4rem;}
-main h2 {font-size: 3.5rem;}
-main h3 {font-size: 2.7rem;}
-main h5 {font-size: 1.5rem;}
-main h6 {font-size: 1.3rem;}
-main .intro-role > span {font-size: 1.3rem;}    /* h6 */
-main p {font-size: 1.25rem;}
+main .header-section { padding: 10em 0 15em 0; }
+main .tldr-section { margin-bottom: 6em; }
+main .challenge-section { padding: 10em 0; }
+main .output-section { margin: 10em 0; }
+main .process-section { padding: 6em 0; }
+main .design-container { margin: 6em 0; }
+main .project-header { align-items: center; }
+main .project-title { max-width: 50%; }
+main .main-image { border-radius: 64px; }
+main .tldr-wrapper { grid-column: 3/11; }
+main .fyi-block { margin: 6em 3em; }
+main .challenge-question, .challenge-image { width: 55%; }
+main .output-wrapper { max-width: 40%; }
+main .process-intro-wrapper > span { margin-bottom: 10em; }
+main .process-approach-wrapper, .process-discover-wrapper, .define-wrapper { grid-column: 3/11; }
+main .image-caption { margin: -1em 0 5em 0; }
 
 /* < 1680 { columns: 12, margin: 32px, gutter: 16px } */
 @media(max-width: 1679px) {
-  main h1 {font-size: calc(0.7rem + 3.1vw);}
-  main h2 {font-size: calc(1.7rem + 1.7vw);}
-  main h3 {font-size: calc(1rem + 1.6vw);}
-  main h5 {font-size: calc(0.4rem + 1vw);}
-  main h6 {font-size: calc(0.3rem + 1vw);}
-  main .intro-role > span {font-size: calc(0.3rem + 1vw);}  /* h6 */
-  main p {font-size: calc(0.5rem + 0.6vw);}
-}
-
-/* < 905 { columns: 12, margin: 32px, gutter: 16px } */
-@media(max-width: 904px) {
 }
 
 /* < 599 { columns: 12, margin: 16px, gutter: 0px } */
 @media(max-width: 599px) {
+  main .header-section { padding: 5em 0 10em 0; }
+  main .tldr-section { margin-bottom: 3em; }
+  main .challenge-section { padding: 6em 0; }
+  main .output-section { margin: 3em 0; }
+  main .process-section { padding: 3em 0; }
+  main .project-header { flex-direction: column; align-items: flex-start; }
+  main .project-title { max-width: 100%; }
+  main .project-title > h2 { margin: 0; }
+  main .project-title > h5 { margin-bottom: 1em; }
+  main .project-title > h6 { margin-top: 1.2em; }
+  main .project-description > h6 { margin: 1em 0 0.8em 0; }
+  main .main-image { border-radius: 32px; }
+  main .tldr-wrapper { grid-column: 2/12; }
+  main .fyi-block { flex-direction: column; margin: 3em 0; }
+  main .fyi-block > h6 { margin-top: 0; }
+  main .challenge-question, .challenge-image { width: 85%; }
+  main .output-container { flex-direction: column; }
+  main .output-container-reverse { flex-direction: column-reverse; }
+  main .output-wrapper { max-width: 100%; }
+  main .output-container > img { margin-top: 2em; }
+  main .output-container-reverse > img { margin-top: 2em; }
+  main .process-intro-wrapper > span { margin-bottom: 3em; }
+  main .process-approach-wrapper, .process-discover-wrapper, .define-wrapper { grid-column: 2/12; }
+  main .image-50 { width: 50% }
+  main .image-100 { width: 100% }
+  main .image-caption { margin: -2em 0 1em 0; }
 }

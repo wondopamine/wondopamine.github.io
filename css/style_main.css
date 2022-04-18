@@ -151,6 +151,10 @@ main .grid-container {
   margin: auto;
 }
 
+main .outro-section {
+  text-align: center;
+}
+
 main .button-container {
   width: 100%;
   display: flex;
