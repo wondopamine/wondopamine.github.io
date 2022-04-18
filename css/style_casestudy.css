@@ -270,4 +270,5 @@ main .image-caption { margin: -1em 0 5em 0; }
   main .image-50 { width: 50% }
   main .image-100 { width: 100% }
   main .image-caption { margin: -2em 0 1em 0; }
+  main .col-3-11 { grid-column: 2/12; }
 }
